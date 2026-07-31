@@ -397,22 +397,23 @@ img {
 
 /* Explore Blogs Section */
 .success-story-explore-blogs-section {
-    background-image: url('../images/explore-blogs/explore-blogs-background.png');
-    background-size: cover;
+    background-image: url('../images/explore-blogs/explore-blogs-background.jpg');
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     color: #1a1a1a;
     position: relative;
     z-index: 5;
     margin-top: -10vw;
-    padding-top: 12vw !important;
+    padding-top: 10vw !important;
+    padding-bottom: 10vw !important;
 }
 
 .success-story-explore-blogs-small-title {
     font-family: var(--font-outfit);
     font-weight: 700;
     font-size: 1rem;
-    color: #d33c2a !important;
+    color: #9d2b1b !important;
 }
 
 .success-story-explore-blogs-title {
