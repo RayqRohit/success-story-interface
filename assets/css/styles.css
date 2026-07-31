@@ -42,9 +42,11 @@
 
 @font-face {
     font-family: 'JMHTypewriter';
-    src: url('../fonts/JMH_Typewriter.ttf') format('truetype');
+    src: url('../fonts/JMH Typewriter-Bold.ttf') format('truetype');
+    font-weight: bold;
     font-style: normal;
 }
+
 
 img {
     -webkit-user-drag: none;
@@ -567,4 +569,128 @@ img {
 }
 .cursor-grab:active {
     cursor: grabbing;
+}
+
+/* Story Submission Section */
+.success-story-submission-section {
+    background-image: url('../images/story-submission/story-submission-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -5vw;
+    z-index: 6;
+}
+
+.success-story-editorial-font {
+    font-family: var(--font-editorial);
+}
+
+.success-story-outfit-font {
+    font-family: var(--font-outfit);
+}
+
+.success-story-submission-form-container {
+    background-image: url('../images/story-submission/story-submission-form.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.success-story-form-input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #1a1a1a;
+    font-family: var(--font-jmh-typewriter);
+    font-size: 0.95rem;
+    color: #1a1a1a;
+    padding-bottom: 8px;
+    outline: none;
+    resize: none;
+    overflow: hidden;
+}
+
+.success-story-form-input::placeholder {
+    color: #1a1a1a;
+}
+
+.success-story-submit-btn {
+    background: #b92b1a;
+    color: #ffffff;
+    font-family: var(--font-outfit);
+    font-weight: 700;
+    font-size: 1.2rem;
+    border: 1px dashed rgba(255, 255, 255, 0.6);
+    border-radius: 50px;
+    padding: 12px 40px;
+    box-shadow: 0 0 0 4px #b92b1a, 0 6px 0 4px #7a1509, 0 12px 15px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-bottom: 15px; /* Account for the bevel box-shadow */
+}
+
+.success-story-submit-btn:hover {
+    transform: translateY(2px);
+    box-shadow: 0 0 0 4px #b92b1a, 0 4px 0 4px #7a1509, 0 8px 10px rgba(0, 0, 0, 0.4);
+}
+
+.success-story-submit-btn:active {
+    transform: translateY(6px);
+    box-shadow: 0 0 0 4px #b92b1a, 0 0 0 4px #7a1509, 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.success-story-form-label {
+    font-family: var(--font-jmh-typewriter);
+    font-size: 0.95rem;
+    color: #1a1a1a;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.success-story-submission-header-title {
+    color: #9d2b1b;
+    font-size: 1rem;
+}
+
+.success-story-submission-main-title {
+    color: #b92b1a;
+    font-size: 3rem;
+}
+
+.success-story-submission-intro-text {
+    max-width: 800px;
+    color: #1a1a1a;
+}
+
+.success-story-submission-post-box-img {
+    max-width: 320px;
+    filter: drop-shadow(0 15px 25px rgba(0,0,0,0.3));
+}
+
+.success-story-submission-stamp-img {
+    top: 3%;
+    right: 10%;
+    width: 95px;
+    
+}
+
+.success-story-submission-form-divider {
+    right: 0;
+    top: 10%;
+    bottom: 10%;
+    width: 1px;
+    background-color: #1a1a1a;
+}
+
+.success-story-submission-checkbox-label {
+    font-family: var(--font-jmh-typewriter);
+    font-size: 0.8rem;
+    font-weight: bold;
+    max-width: 350px;
+}
+
+.success-story-submission-section .form-check-input:checked {
+    background-color: transparent;
+    border-color: #1a1a1a;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23a32a11' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
 }
