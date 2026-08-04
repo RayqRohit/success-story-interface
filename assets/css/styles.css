@@ -221,6 +221,7 @@ img {
         opacity: 0;
         transform: translate(var(--start-x, 0), var(--start-y, 80px)) rotate(var(--start-rotate, 0deg));
     }
+
     100% {
         opacity: 1;
         transform: translate(0, 0) rotate(var(--final-rotate, 0deg));
@@ -827,7 +828,7 @@ img {
     padding: 100px 0;
     font-family: var(--font-outfit), sans-serif;
     color: #1a1a1a;
-    
+
     /* Blend the top edge with the section above */
     position: relative;
     z-index: 5;
@@ -870,7 +871,8 @@ img {
     align-items: center;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 6px;
-    padding: 6px 6px 6px 16px; /* Adjusted padding for better alignment */
+    padding: 6px 6px 6px 16px;
+    /* Adjusted padding for better alignment */
     background: transparent;
 }
 
@@ -928,4 +930,8 @@ img {
     width: 16px;
     height: 16px;
     transition: transform 0.3s ease;
+}
+
+.success-story-footer-subscribe-wrapper {
+    gap: 15px;
 }

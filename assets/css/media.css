@@ -1,0 +1,1993 @@
+@media screen and (max-width: 375px) {
+    .success-story-navbar-content {
+        display: none !important;
+    }
+
+    .success-story-navbar-section {
+        height: 125px !important;
+        position: relative;
+        z-index: 10;
+    }
+
+    .success-story-navbar-img {
+        height: 125px !important;
+        z-index: 2 !important;
+    }
+
+    /* Hero Section Mobile */
+    .success-story-hero-section {
+        min-height: 830px;
+        padding: 70px 10px 180px 10px;
+        margin-top: -40px;
+    }
+
+    .success-story-hero-section img[alt*="Divider"] {
+        width: 50px;
+    }
+
+    .success-story-hero-title {
+        font-size: 2.5rem;
+    }
+
+    .success-story-hero-title br {
+        display: none;
+    }
+
+    .success-story-hero-text {
+        font-size: 0.95rem;
+        line-height: 1.4;
+        padding: 0 10px;
+    }
+
+    /* Buttons */
+    .success-story-hero-section .d-flex.gap-3 {
+        gap: 10px !important;
+    }
+
+    .success-story-btn-primary,
+    .success-story-btn-secondary {
+        padding: 12px 18px !important;
+        font-size: 0.95rem !important;
+    }
+
+    /* Postcards Mobile Scale & Position */
+    .success-story-scatter-item {
+        scale: 0.4;
+    }
+
+    .success-story-postcard-tl {
+        top: -12%;
+        left: -41%;
+    }
+
+    .success-story-photo-bl {
+        bottom: auto;
+        top: 63%;
+        left: 2%;
+        --final-rotate: -16deg;
+    }
+
+    .success-story-postcard-bc {
+        bottom: -9%;
+        left: 35%;
+        scale: 0.5;
+    }
+
+    .success-story-photo-br {
+        bottom: 1%;
+        right: -36%;
+        --final-rotate: 14deg;
+        scale: 0.4;
+    }
+
+    .success-story-postcard-tr {
+        top: -13%;
+        right: -47%;
+    }
+
+    /* Impact Journey Section Mobile */
+    .success-story-impact-section {
+        margin-top: -215px;
+        padding-top: 240px !important;
+        background-size: cover !important;
+        background-position: top center !important;
+    }
+
+    .success-story-impact-title {
+        font-size: 2.2rem;
+    }
+
+    .success-story-impact-section img[alt*="Divider"] {
+        width: 50px;
+    }
+
+
+    .success-story-impact-text {
+        font-size: 0.9rem;
+        padding: 0 15px;
+    }
+
+    .success-story-impact-card {
+        margin-bottom: 0px;
+        width: 85%;
+        margin: 0 auto;
+        min-height: 200px;
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .success-story-impact-card-title {
+        font-size: 1.5rem;
+    }
+
+    .success-story-impact-card-text {
+        font-size: 0.85rem;
+    }
+
+    .success-story-ticket-title {
+        font-size: 1.6rem;
+    }
+
+    .success-story-ticket-subtitle,
+    .success-story-ticket-footer {
+        font-size: 0.75rem;
+        margin-block: 6px;
+    }
+
+    /* Explore Blogs Section Mobile */
+    .success-story-explore-blogs-section {
+        margin-top: -215px;
+        padding-top: 130px !important;
+        padding-bottom: 150px !important;
+        background-size: cover !important;
+        background-position: top center !important;
+    }
+
+    /* Story Submission Section Mobile */
+    .success-story-submission-section {
+        margin-top: -60px;
+        padding-top: 100px !important;
+    }
+
+    .success-story-explore-blogs-title {
+        font-size: 2.2rem;
+    }
+
+    .success-story-explore-blogs-text {
+        font-size: 0.9rem;
+        padding: 0 15px;
+        margin-bottom: 20px !important;
+    }
+
+    .success-story-explore-blogs-section img[alt="Divider Left"],
+    .success-story-explore-blogs-section img[alt="Divider Right"] {
+        width: 50px;
+    }
+
+    .success-story-postcard {
+        width: 85vw;
+        min-width: 300px;
+    }
+
+    .success-story-explore-blogs-carousel {
+        gap: 1rem !important;
+    }
+
+    .success-story-postcard h4 {
+        font-size: 1.1rem !important;
+    }
+
+    .success-story-postcard-desc {
+        font-size: 0.75rem;
+    }
+
+    .success-story-postcard img[alt="Stamp"] {
+        width: 45px;
+    }
+
+    .success-story-explore-blogs-read-more {
+        font-size: 1.4rem !important;
+    }
+
+    .success-story-explore-blogs-subtitle {
+        font-size: 2.2rem;
+    }
+
+    .success-story-explore-blogs-choice-box {
+        width: 100%;
+        padding: 60px 20px !important;
+    }
+
+    .success-story-explore-blogs-choice-title {
+        font-size: 1.4rem;
+    }
+
+    .success-story-choice-text {
+        font-size: 0.95rem;
+    }
+
+    .success-story-pill-btn {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
+
+    .success-story-explore-blogs-subtitle {
+        padding-top: 1rem !important;
+    }
+
+    .success-story-submission-section img[alt="Divider Left"],
+    .success-story-submission-section img[alt="Divider Right"] {
+        width: 50px;
+    }
+
+    .success-story-submission-main-title {
+        font-size: 2.2rem;
+    }
+
+    .success-story-submission-intro-text p {
+        font-size: 0.95rem;
+        padding: 0 15px;
+    }
+
+    .success-story-submission-post-box-img {
+        max-width: 250px;
+    }
+
+    .success-story-submission-stamp-img {
+        width: 97px;
+        top: -7%;
+        right: 9%;
+    }
+
+    .success-story-submission-polaroid {
+        width: 120px;
+    }
+
+    .success-story-submission-section.in-view .success-story-submission-polaroid-1 {
+        top: 48%;
+        left: 5%;
+        transform: rotate(-15deg);
+    }
+
+    .success-story-submission-section.in-view .success-story-submission-polaroid-2 {
+        top: 21%;
+        right: 11%;
+        transform: rotate(20deg);
+    }
+
+    .success-story-submission-section.in-view .success-story-submission-polaroid-3 {
+        top: 50%;
+        right: 9%;
+        transform: rotate(-13deg);
+    }
+
+    .success-story-submission-form-container .d-flex.align-items-end {
+        align-items: flex-start !important;
+    }
+
+    .success-story-submission-form-container img[alt="PU POST"] {
+        width: 110px !important;
+    }
+
+    .success-story-submission-checkbox-label {
+        font-size: 0.6rem;
+    }
+
+    .success-story-footer-section {
+        background-size: auto;
+        background-repeat: repeat;
+    }
+
+    .success-story-footer-heading {
+        font-size: 1.3rem;
+    }
+
+    .success-story-footer-links li {
+        font-size: 1.1rem;
+        margin-bottom: 16px;
+    }
+
+    .success-story-footer-social-icons a {
+        width: 45px;
+        height: 45px;
+    }
+
+    .success-story-footer-social-icons img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 479px) {
+    .success-story-navbar-content {
+        display: none !important;
+    }
+
+    .success-story-navbar-section {
+        height: 125px !important;
+        position: relative;
+        z-index: 10;
+    }
+
+    .success-story-navbar-img {
+        height: 125px !important;
+        z-index: 2 !important;
+    }
+
+    /* Hero Section Mobile */
+    .success-story-hero-section {
+        min-height: 830px;
+        padding: 70px 10px 180px 10px;
+        margin-top: -40px;
+    }
+
+    .success-story-hero-section img[alt*="Divider"] {
+        width: 50px;
+    }
+
+    .success-story-hero-title {
+        font-size: 2.5rem;
+    }
+
+    .success-story-hero-title br {
+        display: none;
+    }
+
+    .success-story-hero-text {
+        font-size: 0.95rem;
+        line-height: 1.4;
+        padding: 0 10px;
+    }
+
+    /* Buttons */
+    .success-story-hero-section .d-flex.gap-3 {
+        gap: 10px !important;
+    }
+
+    .success-story-btn-primary,
+    .success-story-btn-secondary {
+        padding: 12px 18px !important;
+        font-size: 0.95rem !important;
+    }
+
+    /* Postcards Mobile Scale & Position */
+    .success-story-scatter-item {
+        scale: 0.4;
+    }
+
+    .success-story-postcard-tl {
+        top: -12%;
+        left: -41%;
+        scale: 0.6;
+    }
+
+    .success-story-photo-bl {
+        bottom: auto;
+        top: 63%;
+        left: 2%;
+        --final-rotate: -16deg;
+    }
+
+    .success-story-postcard-bc {
+        bottom: -9%;
+        left: 35%;
+        scale: 0.5;
+    }
+
+    .success-story-photo-br {
+        bottom: 1%;
+        right: -36%;
+        --final-rotate: 14deg;
+        scale: 0.4;
+    }
+
+    .success-story-postcard-tr {
+        top: -8%;
+        right: -42%;
+        scale: 0.5;
+    }
+
+    /* Impact Journey Section Mobile */
+    .success-story-impact-section {
+        margin-top: -215px;
+        padding-top: 240px !important;
+        background-size: cover !important;
+        background-position: top center !important;
+    }
+
+    .success-story-impact-title {
+        font-size: 2.2rem;
+    }
+
+    .success-story-impact-section img[alt*="Divider"] {
+        width: 50px;
+    }
+
+
+    .success-story-impact-text {
+        font-size: 0.9rem;
+        padding: 0 15px;
+    }
+
+    .success-story-impact-card {
+        margin-bottom: 0px;
+        width: 85%;
+        margin: 0 auto;
+        min-height: 200px;
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .success-story-impact-card-title {
+        font-size: 1.5rem;
+    }
+
+    .success-story-impact-card-text {
+        font-size: 0.85rem;
+    }
+
+    .success-story-ticket-title {
+        font-size: 1.6rem;
+    }
+
+    .success-story-ticket-subtitle,
+    .success-story-ticket-footer {
+        font-size: 0.75rem;
+        margin-block: 6px;
+    }
+
+    /* Explore Blogs Section Mobile */
+    .success-story-explore-blogs-section {
+        margin-top: -215px;
+        padding-top: 130px !important;
+        padding-bottom: 150px !important;
+        background-size: cover !important;
+        background-position: top center !important;
+    }
+
+    .success-story-explore-blogs-title {
+        font-size: 2.2rem;
+    }
+
+    .success-story-explore-blogs-text {
+        font-size: 0.9rem;
+        padding: 0 15px;
+        margin-bottom: 20px !important;
+    }
+
+    .success-story-explore-blogs-section img[alt="Divider Left"],
+    .success-story-explore-blogs-section img[alt="Divider Right"] {
+        width: 50px;
+    }
+
+    .success-story-postcard {
+        width: 85vw;
+        min-width: 300px;
+    }
+
+    .success-story-postcard h4 {
+        font-size: 1.1rem !important;
+    }
+
+    .success-story-postcard-desc {
+        font-size: 0.75rem;
+    }
+
+    .success-story-postcard img[alt="Stamp"] {
+        width: 45px;
+    }
+
+    .success-story-explore-blogs-read-more {
+        font-size: 1.4rem !important;
+    }
+
+    .success-story-explore-blogs-subtitle {
+        font-size: 2.2rem;
+        padding-top: 1rem !important;
+    }
+
+    .success-story-submission-content-container .col-md-4 {
+        /* justify-content: center !important; */
+        padding-left: 13% !important;
+    }
+
+
+    .success-story-explore-blogs-choice-box {
+        width: 100%;
+        padding: 60px 20px !important;
+    }
+
+    .success-story-explore-blogs-choice-title {
+        font-size: 1.4rem;
+    }
+
+    .success-story-choice-text {
+        font-size: 0.95rem;
+    }
+
+    .success-story-pill-btn {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
+
+    .success-story-explore-blogs-carousel {
+        gap: 1rem !important;
+    }
+
+    .success-story-submission-section {
+        margin-top: -60px;
+        padding-top: 100px !important;
+    }
+
+    .success-story-submission-section img[alt="Divider Left"],
+    .success-story-submission-section img[alt="Divider Right"] {
+        width: 50px;
+    }
+
+    .success-story-submission-main-title {
+        font-size: 2.2rem;
+    }
+
+    .success-story-submission-intro-text p {
+        font-size: 0.95rem;
+        padding: 0 15px;
+    }
+
+    .success-story-submission-post-box-img {
+        max-width: 250px;
+    }
+
+    .success-story-submission-stamp-img {
+        width: 97px;
+        top: -7%;
+        right: 9%;
+    }
+
+    .success-story-submission-polaroid {
+        width: 120px;
+    }
+
+    .success-story-submission-section.in-view .success-story-submission-polaroid-1 {
+        top: 48%;
+        left: 5%;
+        transform: rotate(-15deg);
+    }
+
+    .success-story-submission-section.in-view .success-story-submission-polaroid-2 {
+        top: 21%;
+        right: 11%;
+        transform: rotate(20deg);
+    }
+
+    .success-story-submission-section.in-view .success-story-submission-polaroid-3 {
+        top: 50%;
+        right: 9%;
+        transform: rotate(-13deg);
+    }
+
+    .success-story-submission-form-container .d-flex.align-items-end {
+        align-items: flex-start !important;
+    }
+
+    .success-story-submission-form-container img[alt="PU POST"] {
+        width: 110px !important;
+    }
+
+    .success-story-submission-checkbox-label {
+        font-size: 0.6rem;
+    }
+
+    .success-story-footer-section {
+        background-size: auto;
+        background-repeat: repeat;
+    }
+
+    .success-story-footer-heading {
+        font-size: 1.3rem;
+    }
+
+    .success-story-footer-links li {
+        font-size: 1.1rem;
+        margin-bottom: 16px;
+    }
+
+    .success-story-footer-social-icons a {
+        width: 45px;
+        height: 45px;
+    }
+
+    .success-story-footer-social-icons img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 575px) {
+    .success-story-navbar-content {
+        display: none !important;
+    }
+
+    .success-story-navbar-section {
+        height: 125px !important;
+        position: relative;
+        z-index: 10;
+    }
+
+    .success-story-navbar-img {
+        height: 125px !important;
+        z-index: 2 !important;
+    }
+
+    /* Hero Section Mobile */
+    .success-story-hero-section {
+        min-height: 850px;
+        padding: 70px 10px 180px 10px;
+        margin-top: -40px;
+    }
+
+    .success-story-hero-section img[alt*="Divider"] {
+        width: 50px;
+    }
+
+    .success-story-hero-title {
+        font-size: 3rem;
+    }
+
+    .success-story-hero-title br {
+        display: none;
+    }
+
+    .success-story-hero-text {
+        font-size: 1rem;
+        line-height: 1.4;
+        padding: 0 10px;
+    }
+
+    /* Buttons */
+    .success-story-hero-section .d-flex.gap-3 {
+        gap: 10px !important;
+    }
+
+    .success-story-btn-primary,
+    .success-story-btn-secondary {
+        padding: 12px 18px !important;
+        font-size: 1.1rem !important;
+    }
+
+    /* Postcards Mobile Scale & Position */
+    .success-story-scatter-item {
+        scale: 0.4;
+    }
+
+    .success-story-postcard-tl {
+        top: -9%;
+        left: -42%;
+        scale: 0.6;
+    }
+
+    .success-story-photo-bl {
+        bottom: auto;
+        top: 63%;
+        left: 6%;
+        --final-rotate: -13deg;
+    }
+
+    .success-story-postcard-bc {
+        bottom: -9%;
+        left: 39%;
+        scale: 0.55;
+    }
+
+    .success-story-photo-br {
+        bottom: 1%;
+        right: -33%;
+        --final-rotate: 14deg;
+        scale: 0.4;
+    }
+
+    .success-story-postcard-tr {
+        top: -5%;
+        right: -39%;
+        scale: 0.5;
+    }
+
+    /* Impact Journey Section Mobile */
+    .success-story-impact-section {
+        margin-top: -215px;
+        padding-top: 240px !important;
+        background-size: cover !important;
+        background-position: top center !important;
+    }
+
+    .success-story-impact-title {
+        font-size: 2.6rem;
+    }
+
+    .success-story-impact-section img[alt*="Divider"] {
+        width: 50px;
+    }
+
+
+    .success-story-impact-text {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+
+    .success-story-impact-card {
+        margin-bottom: 0px;
+        width: 85%;
+        margin: 0 auto;
+        min-height: 200px;
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .success-story-impact-card-title {
+        font-size: 2rem;
+    }
+
+    .success-story-impact-card-text {
+        font-size: 1.1rem;
+    }
+
+    .success-story-ticket-title {
+        font-size: 2.2rem;
+    }
+
+    .success-story-ticket-subtitle,
+    .success-story-ticket-footer {
+        font-size: 1rem;
+        margin-block: 12px;
+    }
+
+    /* Explore Blogs Section Mobile */
+    .success-story-explore-blogs-section {
+        margin-top: -215px;
+        padding-top: 130px !important;
+        padding-bottom: 150px !important;
+        background-size: cover !important;
+        background-position: top center !important;
+    }
+
+    .success-story-explore-blogs-title {
+        font-size: 2.6rem;
+    }
+
+    .success-story-explore-blogs-text {
+        font-size: 1rem;
+        padding: 0 15px;
+        margin-bottom: 20px !important;
+    }
+
+    .success-story-explore-blogs-section img[alt="Divider Left"],
+    .success-story-explore-blogs-section img[alt="Divider Right"] {
+        width: 50px;
+    }
+
+    .success-story-postcard {
+        width: 85vw;
+        min-width: 300px;
+    }
+
+    .success-story-postcard h4 {
+        font-size: 1.3rem !important;
+    }
+
+    .success-story-postcard-desc {
+        font-size: 0.85rem;
+    }
+
+    .success-story-postcard img[alt="Stamp"] {
+        width: 45px;
+    }
+
+    .success-story-explore-blogs-read-more {
+        font-size: 1.6rem !important;
+    }
+
+    .success-story-explore-blogs-subtitle {
+        font-size: 2.6rem;
+        padding-top: 1rem !important;
+    }
+
+    .success-story-explore-blogs-choice-box {
+        width: 100%;
+        padding: 60px 20px !important;
+    }
+
+    .success-story-explore-blogs-choice-title {
+        font-size: 1.6rem;
+    }
+
+    .success-story-choice-text {
+        font-size: 1rem;
+    }
+
+    .success-story-pill-btn {
+        font-size: 0.95rem;
+        padding: 6px 12px;
+    }
+
+    .success-story-explore-blogs-carousel {
+        gap: 1rem !important;
+    }
+
+    .success-story-submission-section {
+        margin-top: -60px;
+        padding-top: 100px !important;
+    }
+
+    .success-story-submission-section img[alt="Divider Left"],
+    .success-story-submission-section img[alt="Divider Right"] {
+        width: 50px;
+    }
+
+    .success-story-submission-main-title {
+        font-size: 2.6rem;
+    }
+
+    .success-story-submission-intro-text p {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+
+    .success-story-submission-content-container .col-md-4 {
+        /* justify-content: center !important; */
+        padding-left: 13% !important;
+    }
+
+    .success-story-submission-post-box-img {
+        max-width: 300px;
+    }
+
+    .success-story-submission-stamp-img {
+        width: 126px;
+        top: -9%;
+        right: 13%;
+    }
+
+    .success-story-submission-polaroid {
+        width: 160px;
+    }
+
+    .success-story-submission-section.in-view .success-story-submission-polaroid-1 {
+        top: 46%;
+        left: 6%;
+        transform: rotate(-15deg);
+    }
+
+    .success-story-submission-section.in-view .success-story-submission-polaroid-2 {
+        top: 19%;
+        right: 13%;
+        transform: rotate(20deg);
+    }
+
+    .success-story-submission-section.in-view .success-story-submission-polaroid-3 {
+        top: 50%;
+        right: 10%;
+        transform: rotate(-13deg);
+    }
+
+    .success-story-submission-form-container .d-flex.align-items-end {
+        align-items: flex-start !important;
+    }
+
+    .success-story-submission-form-container img[alt="PU POST"] {
+        width: 110px !important;
+    }
+
+    .success-story-submission-checkbox-label {
+        font-size: 0.85rem;
+    }
+
+    .success-story-submit-btn {
+        font-size: 1.5rem;
+    }
+
+
+    .success-story-footer-section {
+        background-size: auto;
+        background-repeat: repeat;
+    }
+
+    .success-story-footer-heading {
+        font-size: 1.3rem;
+    }
+
+    .success-story-footer-links li {
+        font-size: 1.1rem;
+        margin-bottom: 16px;
+    }
+
+    .success-story-footer-social-icons a {
+        width: 45px;
+        height: 45px;
+    }
+
+    .success-story-footer-social-icons img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .success-story-navbar-content {
+        display: none !important;
+    }
+
+    .success-story-navbar-section {
+        height: 125px !important;
+        position: relative;
+        z-index: 10;
+    }
+
+    .success-story-navbar-img {
+        height: 125px !important;
+        z-index: 2 !important;
+    }
+
+    /* Hero Section Mobile */
+    .success-story-hero-section {
+        min-height: 850px;
+        padding: 70px 10px 180px 10px;
+        margin-top: -40px;
+    }
+
+    .success-story-hero-section img[alt*="Divider"] {
+        width: 50px;
+    }
+
+    .success-story-hero-title {
+        font-size: 3rem;
+    }
+
+    .success-story-hero-title br {
+        display: none;
+    }
+
+    .success-story-hero-text {
+        font-size: 1rem;
+        line-height: 1.4;
+        padding: 0 10px;
+    }
+
+    /* Buttons */
+    .success-story-hero-section .d-flex.gap-3 {
+        gap: 10px !important;
+    }
+
+    .success-story-btn-primary,
+    .success-story-btn-secondary {
+        padding: 12px 18px !important;
+        font-size: 1.1rem !important;
+    }
+
+    /* Postcards Mobile Scale & Position */
+    .success-story-scatter-item {
+        scale: 0.4;
+    }
+
+    .success-story-postcard-tl {
+        top: -8%;
+        left: -27%;
+        scale: 0.7;
+    }
+
+    .success-story-photo-bl {
+        bottom: auto;
+        top: 61%;
+        left: 21%;
+        --final-rotate: -13deg;
+        scale: 0.5;
+    }
+
+    .success-story-postcard-bc {
+        bottom: -9%;
+        left: 49%;
+        scale: 0.6;
+    }
+
+    .success-story-photo-br {
+        bottom: 3%;
+        right: -18%;
+        --final-rotate: 14deg;
+        scale: 0.5;
+    }
+
+    .success-story-postcard-tr {
+        top: -5%;
+        right: -26%;
+        scale: 0.7;
+    }
+
+    /* Impact Journey Section Mobile */
+    .success-story-impact-section {
+        margin-top: -215px;
+        padding-top: 240px !important;
+        background-size: cover !important;
+        background-position: top center !important;
+    }
+
+    .success-story-impact-title {
+        font-size: 2.6rem;
+    }
+
+    .success-story-impact-section img[alt*="Divider"] {
+        width: 50px;
+    }
+
+
+    .success-story-impact-text {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+
+    .success-story-impact-card {
+        margin-bottom: 0px;
+        width: 85%;
+        margin: 0 auto;
+        min-height: 200px;
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .success-story-impact-card-title {
+        font-size: 2rem;
+    }
+
+    .success-story-impact-card-text {
+        font-size: 1.1rem;
+    }
+
+    .success-story-ticket-title {
+        font-size: 2.2rem;
+    }
+
+    .success-story-ticket-subtitle,
+    .success-story-ticket-footer {
+        font-size: 1rem;
+        margin-block: 12px;
+    }
+
+    /* Explore Blogs Section Mobile */
+    .success-story-explore-blogs-section {
+        margin-top: -215px;
+        padding-top: 130px !important;
+        padding-bottom: 150px !important;
+        background-size: cover !important;
+        background-position: top center !important;
+    }
+
+    .success-story-explore-blogs-title {
+        font-size: 3rem;
+    }
+
+    .success-story-explore-blogs-text {
+        font-size: 1.15rem;
+        padding: 0 15px;
+        margin-bottom: 20px !important;
+    }
+
+    .success-story-explore-blogs-section img[alt="Divider Left"],
+    .success-story-explore-blogs-section img[alt="Divider Right"] {
+        width: 50px;
+    }
+
+    .success-story-postcard {
+        width: 85vw;
+        min-width: 300px;
+    }
+
+    .success-story-postcard h4 {
+        font-size: 1.8rem !important;
+    }
+
+    .success-story-postcard-desc {
+        font-size: 1.15rem;
+    }
+
+    .success-story-postcard img[alt="Stamp"] {
+        width: 65px;
+    }
+
+    .success-story-explore-blogs-read-more {
+        font-size: 1.8rem !important;
+    }
+
+    .success-story-explore-blogs-subtitle {
+        font-size: 3rem;
+        padding-top: 1rem !important;
+    }
+
+    .success-story-explore-blogs-choice-box {
+        width: 100%;
+        padding: 60px 20px !important;
+    }
+
+    .success-story-explore-blogs-choice-title {
+        font-size: 1.8rem;
+    }
+
+    .success-story-choice-text {
+        font-size: 1.15rem;
+    }
+
+    .success-story-pill-btn {
+        font-size: 1.1rem;
+        padding: 6px 12px;
+    }
+
+    .success-story-explore-blogs-carousel {
+        gap: 1rem !important;
+    }
+
+    .success-story-choice-title-wrapper,
+    .success-story-choice-text-wrapper {
+        max-width: 100%;
+        padding: 0.5rem !important;
+    }
+
+    .success-story-submission-section {
+        margin-top: -60px;
+        padding-top: 100px !important;
+    }
+
+    .success-story-submission-section img[alt="Divider Left"],
+    .success-story-submission-section img[alt="Divider Right"] {
+        width: 50px;
+    }
+
+    .success-story-submission-main-title {
+        font-size: 3rem;
+    }
+
+    .success-story-submission-intro-text p {
+        font-size: 1.15rem;
+        padding: 0 15px;
+    }
+
+    .success-story-submission-content-container .col-md-4 {
+        justify-content: center !important;
+        /* padding-left: 7% !important; */
+    }
+
+    .success-story-submission-post-box-img {
+        max-width: 300px;
+    }
+
+    .success-story-submission-stamp-img {
+        width: 126px;
+        top: -9%;
+        right: 13%;
+    }
+
+    .success-story-submission-polaroid {
+        width: 160px;
+    }
+
+    .success-story-submission-section.in-view .success-story-submission-polaroid-1 {
+        top: 44%;
+        left: 6%;
+        transform: rotate(-15deg);
+    }
+
+    .success-story-submission-section.in-view .success-story-submission-polaroid-2 {
+        top: 17%;
+        right: 4%;
+        transform: rotate(20deg);
+    }
+
+    .success-story-submission-section.in-view .success-story-submission-polaroid-3 {
+        top: 51%;
+        right: 6%;
+        transform: rotate(-13deg);
+    }
+
+    .success-story-submission-form-container .d-flex.align-items-end {
+        align-items: flex-start !important;
+    }
+
+    .success-story-submission-form-container img[alt="PU POST"] {
+        width: 110px !important;
+    }
+
+    .success-story-form-label {
+        font-size: 1.15rem;
+    }
+
+    .success-story-submission-checkbox-label {
+        font-size: 1rem;
+    }
+
+    .success-story-submit-btn {
+        font-size: 1.5rem;
+    }
+
+    .success-story-footer-section {
+        background-size: auto;
+        background-repeat: repeat;
+    }
+
+    .success-story-footer-heading {
+        font-size: 1.3rem;
+    }
+
+    .success-story-footer-links li {
+        font-size: 1.1rem;
+        margin-bottom: 16px;
+    }
+
+    .success-story-footer-social-icons a {
+        width: 45px;
+        height: 45px;
+    }
+
+    .success-story-footer-social-icons img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .success-story-navbar-content {
+        display: none !important;
+    }
+
+    .success-story-navbar-section {
+        height: 150px !important;
+        position: relative;
+        z-index: 10;
+    }
+
+    .success-story-navbar-img {
+        height: 150px !important;
+        z-index: 2 !important;
+    }
+
+    /* Hero Section Mobile */
+    .success-story-hero-section {
+        min-height: 1035px;
+        padding: 70px 10px 180px 10px;
+        margin-top: -40px;
+    }
+
+    .success-story-hero-section img[alt*="Divider"] {
+        width: 50px;
+    }
+
+    .success-story-hero-title {
+        font-size: 4rem;
+    }
+
+    .success-story-hero-title br {
+        display: none;
+    }
+
+    .success-story-hero-text {
+        font-size: 1.3rem;
+        line-height: 1.4;
+        padding: 0 10px;
+    }
+
+    /* Buttons */
+    .success-story-hero-section .d-flex.gap-3 {
+        gap: 10px !important;
+    }
+
+    .success-story-btn-primary,
+    .success-story-btn-secondary {
+        padding: 14px 22px !important;
+        font-size: 1.3rem !important;
+    }
+
+    /* Postcards Mobile Scale & Position */
+    .success-story-scatter-item {
+        scale: 0.5;
+    }
+
+    .success-story-postcard-tl {
+        top: -3%;
+        left: -8%;
+        scale: 0.85;
+    }
+
+    .success-story-photo-bl {
+        bottom: auto;
+        top: 61%;
+        left: -10%;
+        --final-rotate: -13deg;
+        scale: 0.65;
+    }
+
+    .success-story-postcard-bc {
+        bottom: -5%;
+        left: 28%;
+        scale: 0.85;
+    }
+
+    .success-story-photo-br {
+        bottom: 5%;
+        right: -5%;
+        --final-rotate: 14deg;
+        scale: 0.7;
+    }
+
+    .success-story-postcard-tr {
+        top: -3%;
+        right: -8%;
+        scale: 0.85;
+    }
+
+    /* Impact Journey Section Mobile */
+    .success-story-impact-section {
+        margin-top: -210px;
+        padding-top: 240px !important;
+        background-size: cover !important;
+        background-position: top center !important;
+    }
+
+    .success-story-impact-title {
+        font-size: 3.5rem;
+    }
+
+    .success-story-impact-section img[alt*="Divider"] {
+        width: 50px;
+    }
+
+    .success-story-impact-text {
+        font-size: 1.3rem;
+        padding: 0 15px;
+    }
+
+    .success-story-impact-section .col-auto {
+        display: none !important;
+    }
+
+    .success-story-impact-section .col-md-3 {
+        width: 45%;
+        flex: 0 0 45%;
+        max-width: 45%;
+        margin-bottom: 25px;
+    }
+
+    .success-story-impact-card {
+        margin-bottom: 0px;
+        width: 100%;
+        margin: 0 auto;
+        min-height: 200px;
+        padding: 30px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .success-story-impact-card-title {
+        font-size: 2rem;
+    }
+
+    .success-story-impact-card-text {
+        font-size: 1.1rem;
+    }
+
+    .success-story-ticket-title {
+        font-size: 2.2rem;
+    }
+
+    .success-story-ticket-subtitle,
+    .success-story-ticket-footer {
+        font-size: 1.2rem;
+        margin-block: 12px;
+    }
+
+    .success-story-three-decorative-cards {
+        gap: 1.2rem !important;
+    }
+
+    .success-story-impact-section {
+        padding-bottom: 7rem !important;
+    }
+
+    /* Explore Blogs Section Mobile */
+    .success-story-explore-blogs-section {
+        margin-top: -215px;
+        padding-top: 130px !important;
+        padding-bottom: 200px !important;
+        background-size: cover !important;
+        background-position: top center !important;
+    }
+
+    .success-story-explore-blogs-title {
+        font-size: 4rem;
+    }
+
+    .success-story-explore-blogs-text {
+        font-size: 1.3rem;
+        padding: 0 15px;
+        margin-bottom: 20px !important;
+    }
+
+    .success-story-explore-blogs-section img[alt="Divider Left"],
+    .success-story-explore-blogs-section img[alt="Divider Right"] {
+        width: 50px;
+    }
+
+    .success-story-postcard {
+        width: 70vw;
+        min-width: 400px;
+    }
+
+    .success-story-postcard h4 {
+        font-size: 2rem !important;
+    }
+
+    .success-story-postcard-desc {
+        font-size: 1.2rem;
+    }
+
+    .success-story-postcard img[alt="Stamp"] {
+        width: 65px;
+    }
+
+    .success-story-explore-blogs-read-more {
+        font-size: 2rem !important;
+    }
+
+    .success-story-explore-blogs-subtitle {
+        font-size: 4rem;
+        padding-top: 1rem !important;
+    }
+
+    .success-story-explore-blogs-choice-box {
+        width: 100%;
+        padding: 60px 20px !important;
+    }
+
+    .success-story-explore-blogs-choice-title {
+        font-size: 2rem;
+    }
+
+    .success-story-choice-text {
+        font-size: 1.3rem;
+    }
+
+    .success-story-pill-btn {
+        font-size: 1.3rem;
+        padding: 8px 16px;
+    }
+
+    .success-story-explore-blogs-carousel {
+        gap: 1.5rem !important;
+    }
+
+    .success-story-choice-title-wrapper,
+    .success-story-choice-text-wrapper {
+        max-width: 100%;
+        padding: 0.5rem !important;
+    }
+
+    /* Submission Section */
+    .success-story-submission-section {
+        margin-top: -60px;
+        padding-top: 100px !important;
+    }
+
+    .success-story-submission-section img[alt="Divider Left"],
+    .success-story-submission-section img[alt="Divider Right"] {
+        width: 50px;
+    }
+
+    .success-story-submission-main-title {
+        font-size: 4rem;
+    }
+
+    .success-story-submission-intro-text p {
+        font-size: 1.3rem;
+        padding: 0 15px;
+    }
+
+    .success-story-submission-content-container .col-md-4 {
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        justify-content: center !important;
+    }
+
+    .success-story-submission-content-container .col-md-7 {
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 40px;
+    }
+
+    .success-story-submission-post-box-img {
+        max-width: 350px;
+    }
+
+    .success-story-submission-stamp-img {
+        width: 140px;
+        top: -9%;
+        right: 13%;
+    }
+
+    .success-story-submission-polaroid {
+        width: 200px;
+    }
+
+    .success-story-submission-section.in-view .success-story-submission-polaroid-1 {
+        top: 44%;
+        left: 6%;
+        transform: rotate(-15deg);
+    }
+
+    .success-story-submission-section.in-view .success-story-submission-polaroid-2 {
+        top: 17%;
+        right: 4%;
+        transform: rotate(20deg);
+    }
+
+    .success-story-submission-section.in-view .success-story-submission-polaroid-3 {
+        top: 51%;
+        right: 6%;
+        transform: rotate(-13deg);
+    }
+
+    .success-story-submission-form-container .d-flex.align-items-end {
+        align-items: flex-start !important;
+    }
+
+    .success-story-submission-form-container img[alt="PU POST"] {
+        width: 130px !important;
+    }
+
+    .success-story-form-label {
+        font-size: 1.3rem;
+    }
+
+    .success-story-submission-checkbox-label {
+        font-size: 1.1rem;
+    }
+
+    .success-story-submit-btn {
+        font-size: 1.8rem;
+    }
+
+    /* Footer Section */
+    .success-story-footer-section {
+        background-size: auto;
+        background-repeat: repeat;
+    }
+
+    .success-story-footer-heading {
+        font-size: 1.5rem;
+    }
+
+    .success-story-footer-links li {
+        font-size: 1.3rem;
+        margin-bottom: 16px;
+    }
+
+    .success-story-footer-social-icons a {
+        width: 50px;
+        height: 50px;
+    }
+
+    .success-story-footer-social-icons img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .success-story-submission-content-container {
+        gap: 2rem !important;
+    }
+
+    .success-story-form-input {
+        font-size: 1.2rem;
+    }
+
+    .success-story-footer-subscribe-wrapper {
+        gap: 15px;
+    }
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        max-width: 100% !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .success-story-navbar-content {
+        display: none !important;
+    }
+
+    .success-story-navbar-section {
+        height: 145px !important;
+        position: relative;
+        z-index: 10;
+    }
+
+    .success-story-navbar-img {
+        height: 145px !important;
+        z-index: 2 !important;
+    }
+
+    /* Hero Section Desktop-Small */
+    .success-story-hero-section {
+        min-height: 1200px;
+        padding: 70px 10px 180px 10px;
+        margin-top: -40px;
+    }
+
+    .success-story-hero-section img[alt*="Divider"] {
+        width: 60px;
+    }
+
+    .success-story-hero-title {
+        font-size: 5rem;
+    }
+
+    .success-story-hero-title br {
+        display: none;
+    }
+
+    .success-story-hero-text {
+        font-size: 1.4rem;
+        line-height: 1.5;
+        padding: 0 10px;
+        max-width: 900px;
+    }
+
+    /* Buttons */
+    .success-story-hero-section .d-flex.gap-3 {
+        gap: 15px !important;
+    }
+
+    .success-story-btn-primary,
+    .success-story-btn-secondary {
+        padding: 16px 26px !important;
+        font-size: 1.4rem !important;
+    }
+
+    /* Postcards Desktop-Small Scale & Position */
+    .success-story-scatter-item {
+        scale: 0.6;
+    }
+
+    .success-story-postcard-tl {
+        top: -2%;
+        left: -5%;
+        scale: 0.95;
+    }
+
+    .success-story-photo-bl {
+        bottom: auto;
+        top: 61%;
+        left: -5%;
+        --final-rotate: -13deg;
+        scale: 0.75;
+    }
+
+    .success-story-postcard-bc {
+        bottom: -5%;
+        left: 28%;
+        scale: 0.95;
+    }
+
+    .success-story-photo-br {
+        bottom: 5%;
+        right: -3%;
+        --final-rotate: 14deg;
+        scale: 0.8;
+    }
+
+    .success-story-postcard-tr {
+        top: -2%;
+        right: -5%;
+        scale: 0.95;
+    }
+
+    /* Impact Journey Section Desktop-Small */
+    .success-story-impact-section {
+        margin-top: -190px;
+        padding-top: 240px !important;
+        background-size: cover !important;
+        background-position: top center !important;
+        padding-bottom: 7rem !important;
+    }
+
+    .success-story-impact-title {
+        font-size: 4rem;
+    }
+
+    .success-story-impact-section img[alt*="Divider"] {
+        width: 60px;
+    }
+
+    .success-story-impact-text {
+        font-size: 1.4rem;
+        padding: 0 15px;
+    }
+
+    .success-story-impact-card {
+        margin-bottom: 0px;
+        width: 115%;
+        margin-left: -7.5%;
+        min-height: 200px;
+        padding: 25px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .success-story-impact-card-title {
+        font-size: 2.2rem;
+    }
+
+    .success-story-impact-card-text {
+        font-size: 1.2rem;
+    }
+
+    .success-story-ticket-title {
+        font-size: 2.5rem;
+    }
+
+    .success-story-ticket-subtitle,
+    .success-story-ticket-footer {
+        font-size: 1.3rem;
+        margin-block: 12px;
+    }
+
+    .success-story-three-decorative-cards {
+        gap: 2rem !important;
+    }
+
+    .success-story-submission-post-box-img {
+        max-width: 275px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .success-story-navbar-content {
+        display: none !important;
+    }
+
+    .success-story-navbar-section {
+        height: 145px !important;
+        position: relative;
+        z-index: 10;
+    }
+
+    .success-story-navbar-img {
+        height: 145px !important;
+        z-index: 2 !important;
+    }
+
+    /* Hero Section Desktop-Large */
+    .success-story-hero-section {
+        min-height: 1200px;
+        padding: 70px 10px 180px 10px;
+        margin-top: -40px;
+    }
+
+    .success-story-hero-section img[alt*="Divider"] {
+        width: 70px;
+    }
+
+    .success-story-hero-title {
+        font-size: 5.5rem;
+    }
+
+    .success-story-hero-title br {
+        display: none;
+    }
+
+    .success-story-hero-text {
+        font-size: 1.5rem;
+        line-height: 1.6;
+        padding: 0 10px;
+        max-width: 1000px;
+    }
+
+    /* Buttons */
+    .success-story-hero-section .d-flex.gap-3 {
+        gap: 20px !important;
+    }
+
+    .success-story-btn-primary,
+    .success-story-btn-secondary {
+        padding: 18px 28px !important;
+        font-size: 1.5rem !important;
+    }
+
+    /* Postcards Desktop-Large Scale & Position */
+    .success-story-scatter-item {
+        scale: 0.7;
+    }
+
+    .success-story-postcard-tl {
+        top: -2%;
+        left: -3%;
+        scale: 1;
+    }
+
+    .success-story-photo-bl {
+        bottom: auto;
+        top: 61%;
+        left: -2%;
+        --final-rotate: -13deg;
+        scale: 0.85;
+    }
+
+    .success-story-postcard-bc {
+        bottom: -5%;
+        left: 30%;
+        scale: 1;
+    }
+
+    .success-story-photo-br {
+        bottom: 5%;
+        right: -1%;
+        --final-rotate: 14deg;
+        scale: 0.9;
+    }
+
+    .success-story-postcard-tr {
+        top: -2%;
+        right: -3%;
+        scale: 1;
+    }
+
+    /* Impact Journey Section Mobile */
+    .success-story-impact-section {
+        margin-top: -150px;
+        padding-top: 240px !important;
+        background-size: cover !important;
+        background-position: top center !important;
+    }
+
+    .success-story-submission-post-box-img {
+        max-width: 280px;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+
+    .success-story-hero-section {
+        min-height: 1200px;
+        padding: 70px 10px 180px 10px;
+        margin-top: -40px;
+    }
+
+    /* Postcards Ultra-Wide Scale */
+    .success-story-scatter-item {
+        scale: 1;
+    }
+
+    .success-story-postcard-tl {
+        scale: 1.2;
+    }
+
+    .success-story-photo-bl {
+        scale: 1.05;
+    }
+
+    .success-story-postcard-bc {
+        scale: 1.2;
+    }
+
+    .success-story-photo-br {
+        scale: 1.1;
+    }
+
+    .success-story-postcard-tr {
+        scale: 1.2;
+    }
+
+    .success-story-photo-bl {
+        bottom: 16%;
+    }
+}
+
+
+@media screen and (min-width: 2000px) {
+
+    .success-story-hero-section {
+        min-height: 1200px;
+        padding: 70px 10px 180px 10px;
+        margin-top: -40px;
+    }
+
+    /* Postcards Ultra-Wide Scale */
+    .success-story-scatter-item {
+        scale: 1;
+    }
+
+    .success-story-postcard-tl {
+        scale: 1.4;
+    }
+
+    .success-story-photo-bl {
+        scale: 1.05;
+    }
+
+    .success-story-postcard-bc {
+        scale: 1.4;
+    }
+
+    .success-story-photo-br {
+        scale: 1.1;
+    }
+
+    .success-story-postcard-tr {
+        scale: 1.33;
+    }
+
+    .success-story-photo-bl {
+        bottom: 16%;
+    }
+
+    .success-story-postcard-bc {
+        left: 39%;
+    }
+}
+
+
+@media screen and (min-width: 2200px) {
+
+    .success-story-hero-section {
+        min-height: 1200px;
+        padding: 70px 10px 180px 10px;
+        margin-top: -40px;
+    }
+
+    /* Postcards Ultra-Wide Scale */
+    .success-story-scatter-item {
+        scale: 1;
+    }
+
+    .success-story-postcard-tl {
+        scale: 1.4;
+    }
+
+    .success-story-photo-bl {
+        scale: 1.2;
+    }
+
+    .success-story-postcard-bc {
+        scale: 1.4;
+    }
+
+    .success-story-photo-br {
+        scale: 1.1;
+    }
+
+    .success-story-postcard-tr {
+        scale: 1.33;
+    }
+
+    .success-story-photo-bl {
+        bottom: 16%;
+    }
+
+    .success-story-postcard-bc {
+        left: 39%;
+    }
+}
