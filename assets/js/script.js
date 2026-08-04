@@ -1,3 +1,7 @@
+// Preload the hero background image for faster perceived performance
+const heroBgPreload = new Image();
+heroBgPreload.src = 'assets/images/hero/student-success-section-background.jpg';
+
 document.addEventListener("DOMContentLoaded", function() {
     const observerOptions = {
         root: null,
