@@ -1870,7 +1870,11 @@
 
 @media screen and (min-width : 1400px) and (max-width : 1699px){
     .success-story-hero-section {
-        min-height: 1050px;
+        min-height: 1070px;
+    }
+
+    .success-story-photo-bl{
+        left: 4%;
     }
     
 }
@@ -1878,10 +1882,12 @@
 @media screen and (min-width: 1700px) {
 
     .success-story-hero-section {
-        min-height: 1200px;
+        min-height: 1100px;
         padding: 70px 10px 180px 10px;
         margin-top: -40px;
     }
+
+    
 
     /* Postcards Ultra-Wide Scale */
     .success-story-scatter-item {
@@ -1910,6 +1916,7 @@
 
     .success-story-photo-bl {
         bottom: 16%;
+        left: 4%;
     }
 }
 
@@ -1917,7 +1924,7 @@
 @media screen and (min-width: 2000px) {
 
     .success-story-hero-section {
-        min-height: 1200px;
+        min-height: 1150px;
         padding: 70px 10px 180px 10px;
         margin-top: -40px;
     }
@@ -1960,7 +1967,7 @@
 @media screen and (min-width: 2200px) {
 
     .success-story-hero-section {
-        min-height: 1200px;
+        min-height: 1150px;
         padding: 70px 10px 180px 10px;
         margin-top: -40px;
     }
