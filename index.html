@@ -12,63 +12,9 @@
 </head>
 
 <body>
-    <section class="success-story-navbar-section position-relative">
+    <section class="success-story-navbar-section position-sticky top-0" style="z-index: 9999;">
         <img src="assets/images/navbar/header-paper-texture1-removebg-preview.png" alt="Navbar Image"
             class="success-story-navbar-img position-absolute w-100 top-0 start-0 z-n1">
-
-        <div class="container py-3 success-story-navbar-content">
-            <!-- Top Bar -->
-            <div class="d-flex justify-content-between align-items-center mb-3">
-                <div class="d-flex align-items-center gap-3 success-story-top-left-menu">
-                    <div class="d-flex align-items-center gap-2 font-weight-bold">
-                        <i class="bi bi-megaphone-fill fs-5 success-story-color-black"></i>
-                        <span class="text-dark fw-bold">Admissions Open 2026</span>
-                    </div>
-                    <span class="text-secondary success-story-separator">|</span>
-                    <span class="text-dark success-story-font-poppins-regular">Toll Free: 18001231104</span>
-                </div>
-                <div class="d-flex align-items-center gap-3 success-story-top-middle-menu">
-                    <a href="#"
-                        class="text-dark text-decoration-none d-flex align-items-center gap-1 success-story-font-poppins-regular">Students
-                        <i class="bi bi-chevron-down success-story-dropdown-icon"></i></a>
-                    <a href="#"
-                        class="text-dark text-decoration-none d-flex align-items-center gap-1 success-story-font-poppins-regular">Parents
-                        <i class="bi bi-chevron-down success-story-dropdown-icon"></i></a>
-                    <a href="#" class="text-dark text-decoration-none success-story-font-poppins-regular">Alumni</a>
-                    <span class="text-secondary success-story-separator">|</span>
-                    <a href="#" class="text-dark text-decoration-none success-story-font-poppins-regular">Careers</a>
-                    <span class="text-secondary success-story-separator">|</span>
-                    <a href="#" class="text-dark text-decoration-none success-story-font-poppins-regular">Contact Us</a>
-                </div>
-                <div class="success-story-top-right-menu">
-                    <a href="https://admissions.paruluniversity.ac.in/?utm_source=website&utm_medium=Apply+Now+Button&utm_campaign=Website+Button&_gl=1*1ds1wz2*_gcl_au*MjczMzM2MzcxLjE3ODQzNDg4NTMuNDY3NDA4MzQ0LjE3ODU2MTY5OTIuMTc4NTYxNjk5MS4xNTUwNDY4NjEyLjE3ODU1NjA4OTAuMTc4NTYxNjk5MQ..*_ga*MjY0Mjk1MjczLjE3NzYzMTI5NzY.*_ga_4TFM0V0D7Z*czE3ODU3ODQxMjIkbzE1MSRnMSR0MTc4NTc4NTQ0NSRqNjAkbDAkaDA." target="_blank" class="btn btn-warning rounded-pill fw-bold px-4 ms-2 success-story-apply-btn text-decoration-none">Apply Now</a>
-                </div>
-            </div>
-
-            <!-- Bottom Bar -->
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="success-story-logo-container">
-                    <img src="assets/images/navbar/parul-university-logo.png" alt="Parul University Logo" height="60">
-                </div>
-                <div class="d-flex align-items-center gap-3 success-story-bottom-right-menu">
-                    <a href="#"
-                        class="success-story-nav-link-custom d-flex align-items-center gap-1 success-story-font-poppins-regular">Academic
-                        <i class="bi bi-chevron-down success-story-dropdown-icon success-story-color-blue"></i></a>
-                    <a href="#"
-                        class="success-story-nav-link-custom d-flex align-items-center gap-1 success-story-font-poppins-regular">Campus
-                        <i class="bi bi-chevron-down success-story-dropdown-icon success-story-color-blue"></i></a>
-                    <a href="#"
-                        class="success-story-nav-link-custom success-story-font-poppins-regular">Internationalization</a>
-                    <span class="text-secondary success-story-separator-blue">|</span>
-                    <a href="#" class="success-story-nav-link-custom success-story-font-poppins-regular">Placements</a>
-                    <span class="text-secondary success-story-separator-blue">|</span>
-                    <a href="#" class="success-story-nav-link-custom success-story-font-poppins-regular">About Us</a>
-                    <a href="#" class="text-dark text-decoration-none ms-2">
-                        <i class="bi bi-search fs-5"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
     </section>
 
     <section class="success-story-hero-section overflow-hidden">
@@ -312,11 +258,12 @@
         </div>
     </section>
 
-    <section class="train-journey">
-        <div class="train-journey-container">
-            <div class="moving-journey-background"></div>
-            <img src="assets/images/train-journey/train-compartment-frame.png" alt="Train Compartment Frame" class="train-compartment-frame">
-            <div class="train-journey-text-overlay">
+    <section class="train-journey-scroll-container">
+        <section class="train-journey">
+            <div class="train-journey-container">
+                <div class="moving-journey-background"></div>
+                <img src="assets/images/train-journey/train-compartment-frame.png" alt="Train Compartment Frame" class="train-compartment-frame">
+                <div class="train-journey-text-overlay">
                 <!-- Text Sequence -->
                 <h2 class="train-journey-text">
                     <span>New stories,</span>
@@ -345,7 +292,12 @@
                                     <p class="postcard-line">meaningful impact</p>
                                     <p class="postcard-line">through education.</p>
                                     
-                                    <a href="#" class="postcard-explore-btn">Explore story</a>
+                                    <a href="#" class="postcard-explore-btn">
+                                        Explore story
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right postcard-explore-icon" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -374,7 +326,12 @@
                                     <p class="postcard-line">meaningful impact</p>
                                     <p class="postcard-line">through education.</p>
                                     
-                                    <a href="#" class="postcard-explore-btn">Explore story</a>
+                                    <a href="#" class="postcard-explore-btn">
+                                        Explore story
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right postcard-explore-icon" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -403,7 +360,12 @@
                                     <p class="postcard-line">meaningful impact</p>
                                     <p class="postcard-line">through education.</p>
                                     
-                                    <a href="#" class="postcard-explore-btn">Explore story</a>
+                                    <a href="#" class="postcard-explore-btn">
+                                        Explore story
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right postcard-explore-icon" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -419,6 +381,7 @@
                 </div>
             </div>
         </div>
+        </section>
     </section>
 
     <!-- Explore Blogs Section -->
