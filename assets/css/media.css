@@ -1868,6 +1868,13 @@
     }
 }
 
+@media screen and (min-width : 1400px) and (max-width : 1699px){
+    .success-story-hero-section {
+        min-height: 1050px;
+    }
+    
+}
+
 @media screen and (min-width: 1700px) {
 
     .success-story-hero-section {
