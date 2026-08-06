@@ -1,6 +1,6 @@
 // Preload the hero background image for faster perceived performance
 const heroBgPreload = new Image();
-heroBgPreload.src = 'assets/images/hero/student-success-section-background.jpg';
+heroBgPreload.src = 'assets/images/hero/student-success-section-background.webp';
 
 document.addEventListener("DOMContentLoaded", function () {
     const observerOptions = {
@@ -26,6 +26,19 @@ document.addEventListener("DOMContentLoaded", function () {
     if (postBox) {
         observer.observe(postBox);
     }
+
+    // Blur Reveal Observer
+    const blurObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                observer.unobserve(entry.target); // Only play once
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -25% 0px' });
+
+    const impactSection = document.querySelector('.success-story-impact-section');
+    if (impactSection) blurObserver.observe(impactSection);
 
     // Scroll-Linked Animation for Train Journey
     const trainScrollContainer = document.querySelector('.train-journey-scroll-container');
