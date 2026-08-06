@@ -46,34 +46,17 @@ document.addEventListener("DOMContentLoaded", function () {
         canvas.width = 1920;
         canvas.height = 1080;
 
-        let loadedCount = 0;
-
-        // Load the first frame immediately to display it
-        const firstImg = new Image();
-        firstImg.src = currentFrame(0);
-        firstImg.onload = () => {
-            images[0] = firstImg;
-            ctx.drawImage(firstImg, 0, 0, canvas.width, canvas.height);
-            loadedCount++;
-            preloadNext();
-        };
-
-        function preloadNext() {
-            if (loadedCount < frameCount) {
-                const img = new Image();
-                img.src = currentFrame(loadedCount);
-                img.onload = () => {
-                    images[loadedCount] = img;
-                    loadedCount++;
-                    // Prevent blocking main thread while loading all frames
-                    setTimeout(preloadNext, 2); 
-                };
-                img.onerror = () => {
-                    loadedCount++;
-                    preloadNext();
-                };
-            }
+        // Load all frames concurrently to drastically speed up preloading
+        for (let i = 0; i < frameCount; i++) {
+            const img = new Image();
+            img.src = currentFrame(i);
+            images.push(img);
         }
+
+        // Display the first frame as soon as it's ready
+        images[0].onload = () => {
+            ctx.drawImage(images[0], 0, 0, canvas.width, canvas.height);
+        };
     }
 
     if (trainScrollContainer && trainText && postcardGujarat) {
@@ -102,8 +85,17 @@ document.addEventListener("DOMContentLoaded", function () {
                     Math.floor(frameProgress * frameCount)
                 );
                 
-                if (images[frameIndex]) {
+                // Ensure image is fully loaded before drawing
+                if (images[frameIndex] && images[frameIndex].complete) {
                     ctx.drawImage(images[frameIndex], 0, 0, canvas.width, canvas.height);
+                } else if (images[frameIndex]) {
+                    // Fallback to the closest previously loaded frame if scrolling faster than loading
+                    for (let i = frameIndex - 1; i >= 0; i--) {
+                        if (images[i] && images[i].complete) {
+                            ctx.drawImage(images[i], 0, 0, canvas.width, canvas.height);
+                            break;
+                        }
+                    }
                 }
             }
 
