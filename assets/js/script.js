@@ -143,4 +143,26 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
+
+    // Navbar Scroll Logic
+    const navbarImg = document.querySelector('.success-story-navbar-img');
+    let lastScrollY = window.scrollY;
+
+    if (navbarImg) {
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+            if (currentScrollY > lastScrollY && currentScrollY > 50) {
+                // Scrolling down
+                navbarImg.classList.add('scrolled');
+            } else if (currentScrollY < lastScrollY) {
+                // Scrolling up
+                navbarImg.classList.remove('scrolled');
+            }
+            // Optional: reset if at the very top
+            if (currentScrollY <= 0) {
+                navbarImg.classList.remove('scrolled');
+            }
+            lastScrollY = currentScrollY;
+        }, { passive: true });
+    }
 });

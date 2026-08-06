@@ -81,6 +81,11 @@ img {
     object-position: bottom;
     display: block;
     pointer-events: none;
+    transition: height 0.3s ease-in-out;
+}
+
+.success-story-navbar-img.scrolled {
+    height: 110px;
 }
 
 .success-story-navbar-content {
