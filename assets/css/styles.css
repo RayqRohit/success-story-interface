@@ -71,6 +71,7 @@ img {
 .success-story-navbar-section {
     font-family: var(--font-outfit);
     z-index: 10;
+    transition: height 0.3s ease-in-out;
 }
 
 .success-story-navbar-img {
@@ -84,8 +85,14 @@ img {
     transition: height 0.3s ease-in-out;
 }
 
-.success-story-navbar-img.scrolled {
-    height: 110px;
+@media screen and (min-width: 992px) {
+    .success-story-navbar-section.scrolled {
+        height: 110px !important;
+    }
+    
+    .success-story-navbar-section.scrolled .success-story-navbar-img {
+        height: 110px !important;
+    }
 }
 
 .success-story-navbar-content {

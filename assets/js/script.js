@@ -201,22 +201,22 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Navbar Scroll Logic
-    const navbarImg = document.querySelector('.success-story-navbar-img');
+    const navbarSection = document.querySelector('.success-story-navbar-section');
     let lastScrollY = window.scrollY;
 
-    if (navbarImg) {
+    if (navbarSection) {
         window.addEventListener('scroll', () => {
             const currentScrollY = window.scrollY;
             if (currentScrollY > lastScrollY && currentScrollY > 50) {
                 // Scrolling down
-                navbarImg.classList.add('scrolled');
+                navbarSection.classList.add('scrolled');
             } else if (currentScrollY < lastScrollY) {
                 // Scrolling up
-                navbarImg.classList.remove('scrolled');
+                navbarSection.classList.remove('scrolled');
             }
             // Optional: reset if at the very top
             if (currentScrollY <= 0) {
-                navbarImg.classList.remove('scrolled');
+                navbarSection.classList.remove('scrolled');
             }
             lastScrollY = currentScrollY;
         }, { passive: true });
