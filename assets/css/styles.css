@@ -1145,9 +1145,22 @@ img {
 .train-journey-scroll-container {
     position: relative;
     width: 100%;
-    height: 400vh;
-    /* Allow enough scroll space for all 4 stages */
+    height: 700vh;
+    /* Increased height for frames scrub + postcards */
     z-index: 2;
+}
+
+.journey-frames-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 1;
+    animation: trainSway 1.5s infinite ease-in-out;
+    transform-origin: center center;
+    will-change: transform;
 }
 
 .train-journey {
