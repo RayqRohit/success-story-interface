@@ -40,13 +40,13 @@ document.addEventListener("DOMContentLoaded", function () {
         window.addEventListener('scroll', () => {
             const rect = trainScrollContainer.getBoundingClientRect();
             const windowHeight = window.innerHeight;
-            
+
             // Calculate progress from 0 to 1
             // Starts when top of container hits top of window
             // Ends when bottom of container hits bottom of window
             let progress = 0;
             const totalScrollable = rect.height - windowHeight;
-            
+
             if (rect.top <= 0) {
                 progress = Math.min(1, Math.max(0, -rect.top / totalScrollable));
             }
@@ -62,13 +62,13 @@ document.addEventListener("DOMContentLoaded", function () {
             let textOpacity = mapProgress(progress, 0, 0.1, 0, 1);
             let textBlur = mapProgress(progress, 0, 0.1, 10, 0);
             let textX = 0;
-            
+
             if (progress > 0.2) {
                 textOpacity = mapProgress(progress, 0.2, 0.3, 1, 0);
                 textBlur = mapProgress(progress, 0.2, 0.3, 0, 20);
                 textX = mapProgress(progress, 0.2, 0.3, 0, -120);
             }
-            
+
             trainText.style.opacity = textOpacity;
             trainText.style.filter = `blur(${textBlur}px)`;
             trainText.style.transform = `translateX(${textX}vw)`;
@@ -78,12 +78,12 @@ document.addEventListener("DOMContentLoaded", function () {
             let gujOpacity = mapProgress(progress, 0.2, 0.3, 0, 1);
             let gujScale = mapProgress(progress, 0.2, 0.3, 0.8, 1);
             let gujX = mapProgress(progress, 0.2, 0.3, 120, 0);
-            
+
             if (progress > 0.4) {
                 gujOpacity = mapProgress(progress, 0.4, 0.5, 1, 0);
                 gujX = mapProgress(progress, 0.4, 0.5, 0, -120);
             }
-            
+
             postcardGujarat.style.opacity = gujOpacity;
             postcardGujarat.style.transform = `translateX(${gujX}vw) scale(${gujScale})`;
             postcardGujarat.style.pointerEvents = gujOpacity > 0.5 && gujX === 0 ? 'auto' : 'none';
@@ -92,12 +92,12 @@ document.addEventListener("DOMContentLoaded", function () {
             let goaOpacity = mapProgress(progress, 0.4, 0.5, 0, 1);
             let goaScale = mapProgress(progress, 0.4, 0.5, 0.8, 1);
             let goaX = mapProgress(progress, 0.4, 0.5, 120, 0);
-            
+
             if (progress > 0.6) {
                 goaOpacity = mapProgress(progress, 0.6, 0.7, 1, 0);
                 goaX = mapProgress(progress, 0.6, 0.7, 0, -120);
             }
-            
+
             postcardGoa.style.opacity = goaOpacity;
             postcardGoa.style.transform = `translateX(${goaX}vw) scale(${goaScale})`;
             postcardGoa.style.pointerEvents = goaOpacity > 0.5 && goaX === 0 ? 'auto' : 'none';
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let mumOpacity = mapProgress(progress, 0.6, 0.7, 0, 1);
             let mumScale = mapProgress(progress, 0.6, 0.7, 0.8, 1);
             let mumX = mapProgress(progress, 0.6, 0.7, 120, 0);
-            
+
             postcardMumbai.style.opacity = mumOpacity;
             postcardMumbai.style.transform = `translateX(${mumX}vw) scale(${mumScale})`;
             postcardMumbai.style.pointerEvents = mumOpacity > 0.5 && mumX === 0 ? 'auto' : 'none';
