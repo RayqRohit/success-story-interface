@@ -556,6 +556,11 @@ img {
 
 .success-story-postcard {
     width: 420px;
+    transition: transform 0.3s ease;
+}
+
+.success-story-postcard:hover {
+    transform: rotate(2deg) scale(1.02);
 }
 
 .success-story-postcard-desc {
@@ -978,8 +983,8 @@ img {
 }
 
 .train-journey-text {
-    font-family: var(--font-jmh-typewriter);
-    font-size: 3rem;
+    font-family: var(--font-editorial);
+    font-size: 4rem;
     margin-bottom: 3rem;
     font-weight: bold;
     color: #1a1a1a;
@@ -996,8 +1001,8 @@ img {
 
 .train-journey-postcard-wrapper {
     position: absolute;
-    width: 30.5rem;
-   
+    width: 30rem;
+
     max-width: 800px;
     opacity: 0;
     display: flex;
@@ -1005,7 +1010,7 @@ img {
     justify-content: center;
     pointer-events: none;
     transform: scale(0.8);
-    margin-bottom: 2.4rem;
+    margin-bottom: 2.9rem;
     margin-right: 1rem;
 }
 
@@ -1019,7 +1024,6 @@ img {
     position: relative;
     width: 100%;
     overflow: hidden;
-    border-radius: 32px;
 }
 
 .postcard-content {
@@ -1045,14 +1049,14 @@ img {
 
 .postcard-title {
     font-family: var(--font-editorial);
-    font-size: clamp(0.9rem, 1.6vw, 2rem);
+    font-size: 2rem;
     color: #5a1910;
     margin: 0;
     font-weight: 500;
 }
 
 .postcard-stamp {
-        position: absolute;
+    position: absolute;
     top: -93%;
     right: -9%;
     width: 18%;
@@ -1136,7 +1140,8 @@ img {
 .train-journey-scroll-container {
     position: relative;
     width: 100%;
-    height: 400vh; /* Allow enough scroll space for all 4 stages */
+    height: 400vh;
+    /* Allow enough scroll space for all 4 stages */
     z-index: 2;
 }
 
@@ -1146,7 +1151,8 @@ img {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background-color: transparent; /* No background color so it doesn't block torn paper */
+    background-color: transparent;
+    /* No background color so it doesn't block torn paper */
 }
 
 /* Animations Triggered by Scroll */
@@ -1168,15 +1174,16 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/train-journey/moving-journey-background.jpeg');
-    background-size: auto 100%;
+    background-image: url('../images/train-journey/moving-journey-background.png');
+    background-size: cover;
     background-repeat: repeat-x;
     background-position: left center;
-    animation: scrollTrainBackground 60s linear infinite;
+    animation: scrollTrainBackground 15s linear infinite;
     z-index: 1;
 }
 
-.train-compartment-frame {
+.train-compartment-frame,
+.train-journey-text-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -1185,16 +1192,38 @@ img {
     object-fit: cover;
     z-index: 2;
     pointer-events: none;
-    display: block;
-    animation: trainSway 4s infinite ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: trainSway 1.5s infinite ease-in-out;
     transform-origin: center center;
+    will-change: transform;
 }
 
 @keyframes trainSway {
-    0%, 100% { transform: scale(1.05) translate(0, 0) rotate(0deg); }
-    25% { transform: scale(1.05) translate(4px, -6px) rotate(1deg); }
-    50% { transform: scale(1.05) translate(-2px, 4px) rotate(-0.8deg); }
-    75% { transform: scale(1.05) translate(-4px, -2px) rotate(0.6deg); }
+    0%      { transform: scale(1.05) translate(0px, -3px); }
+
+    6.25%   { transform: scale(1.05) translate(1.5px, -3px); }
+    12.5%   { transform: scale(1.05) translate(3px, -3px); }
+    18.75%  { transform: scale(1.05) translate(3px, -1.5px); }
+
+    25%     { transform: scale(1.05) translate(3px, 0px); }
+    31.25%  { transform: scale(1.05) translate(3px, 1.5px); }
+    37.5%   { transform: scale(1.05) translate(3px, 3px); }
+
+    43.75%  { transform: scale(1.05) translate(1.5px, 3px); }
+    50%     { transform: scale(1.05) translate(0px, 3px); }
+
+    56.25%  { transform: scale(1.05) translate(-1.5px, 3px); }
+    62.5%   { transform: scale(1.05) translate(-3px, 3px); }
+    68.75%  { transform: scale(1.05) translate(-3px, 1.5px); }
+
+    75%     { transform: scale(1.05) translate(-3px, 0px); }
+    81.25%  { transform: scale(1.05) translate(-3px, -1.5px); }
+    87.5%   { transform: scale(1.05) translate(-3px, -3px); }
+
+    93.75%  { transform: scale(1.05) translate(-1.5px, -3px); }
+    100%    { transform: scale(1.05) translate(0px, -3px); }
 }
 
 @keyframes scrollTrainBackground {
@@ -1214,7 +1243,8 @@ img {
     transform: translate(-50%, -50%);
     width: 60vw;
     max-width: 900px;
-    height: 33.75vw; /* 16:9 Aspect Ratio based on width */
+    height: 33.75vw;
+    /* 16:9 Aspect Ratio based on width */
     max-height: 506px;
     background: #000;
     z-index: 10;
@@ -1222,7 +1252,7 @@ img {
     pointer-events: none;
     transition: opacity 0.5s ease-in-out;
     border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .train-journey-video-overlay.active {

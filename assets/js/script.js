@@ -11,14 +11,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Add the class to the parent section to trigger the CSS animation
-                const section = entry.target.closest('.success-story-submission-section');
-                if (section) {
+            const section = entry.target.closest('.success-story-submission-section');
+            if (section) {
+                if (entry.isIntersecting) {
+                    // Add the class to the parent section to trigger the CSS animation
                     section.classList.add('in-view');
+                } else {
+                    // Remove the class when out of view so the animation replays next time
+                    section.classList.remove('in-view');
                 }
-                // Optional: Stop observing once the animation has triggered
-                // observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
@@ -73,56 +74,42 @@ document.addEventListener("DOMContentLoaded", function () {
             trainText.style.transform = `translateX(${textX}vw)`;
             trainText.style.pointerEvents = textOpacity > 0.5 ? 'auto' : 'none';
 
-            // 2. Gujarat Sequence (0.25 to 0.55)
-            let gujOpacity = 0;
-            let gujScale = 0.8;
-            let gujX = 0;
+            // 2. Gujarat Sequence (0.2 to 0.5)
+            let gujOpacity = mapProgress(progress, 0.2, 0.3, 0, 1);
+            let gujScale = mapProgress(progress, 0.2, 0.3, 0.8, 1);
+            let gujX = mapProgress(progress, 0.2, 0.3, 120, 0);
             
-            if (progress >= 0.25 && progress < 0.55) {
-                gujOpacity = mapProgress(progress, 0.25, 0.3, 0, 1);
-                gujScale = mapProgress(progress, 0.25, 0.3, 0.8, 1);
-                
-                if (progress > 0.45) {
-                    gujOpacity = mapProgress(progress, 0.45, 0.55, 1, 0);
-                    gujX = mapProgress(progress, 0.45, 0.55, 0, -120);
-                }
+            if (progress > 0.4) {
+                gujOpacity = mapProgress(progress, 0.4, 0.5, 1, 0);
+                gujX = mapProgress(progress, 0.4, 0.5, 0, -120);
             }
             
             postcardGujarat.style.opacity = gujOpacity;
             postcardGujarat.style.transform = `translateX(${gujX}vw) scale(${gujScale})`;
             postcardGujarat.style.pointerEvents = gujOpacity > 0.5 && gujX === 0 ? 'auto' : 'none';
 
-            // 3. Goa Sequence (0.5 to 0.8)
-            let goaOpacity = 0;
-            let goaScale = 0.8;
-            let goaX = 0;
+            // 3. Goa Sequence (0.4 to 0.7)
+            let goaOpacity = mapProgress(progress, 0.4, 0.5, 0, 1);
+            let goaScale = mapProgress(progress, 0.4, 0.5, 0.8, 1);
+            let goaX = mapProgress(progress, 0.4, 0.5, 120, 0);
             
-            if (progress >= 0.5 && progress < 0.8) {
-                goaOpacity = mapProgress(progress, 0.5, 0.55, 0, 1);
-                goaScale = mapProgress(progress, 0.5, 0.55, 0.8, 1);
-                
-                if (progress > 0.7) {
-                    goaOpacity = mapProgress(progress, 0.7, 0.8, 1, 0);
-                    goaX = mapProgress(progress, 0.7, 0.8, 0, -120);
-                }
+            if (progress > 0.6) {
+                goaOpacity = mapProgress(progress, 0.6, 0.7, 1, 0);
+                goaX = mapProgress(progress, 0.6, 0.7, 0, -120);
             }
             
             postcardGoa.style.opacity = goaOpacity;
             postcardGoa.style.transform = `translateX(${goaX}vw) scale(${goaScale})`;
             postcardGoa.style.pointerEvents = goaOpacity > 0.5 && goaX === 0 ? 'auto' : 'none';
 
-            // 4. Mumbai Sequence (0.75 to 1.0)
-            let mumOpacity = 0;
-            let mumScale = 0.8;
-            
-            if (progress >= 0.75) {
-                mumOpacity = mapProgress(progress, 0.75, 0.8, 0, 1);
-                mumScale = mapProgress(progress, 0.75, 0.8, 0.8, 1);
-            }
+            // 4. Mumbai Sequence (0.6 to 1.0)
+            let mumOpacity = mapProgress(progress, 0.6, 0.7, 0, 1);
+            let mumScale = mapProgress(progress, 0.6, 0.7, 0.8, 1);
+            let mumX = mapProgress(progress, 0.6, 0.7, 120, 0);
             
             postcardMumbai.style.opacity = mumOpacity;
-            postcardMumbai.style.transform = `scale(${mumScale})`;
-            postcardMumbai.style.pointerEvents = mumOpacity > 0.5 ? 'auto' : 'none';
+            postcardMumbai.style.transform = `translateX(${mumX}vw) scale(${mumScale})`;
+            postcardMumbai.style.pointerEvents = mumOpacity > 0.5 && mumX === 0 ? 'auto' : 'none';
         });
     }
 
