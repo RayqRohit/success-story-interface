@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 observer.unobserve(entry.target); // Only play once
             }
         });
-    }, { threshold: 0.1, rootMargin: '0px 0px -25% 0px' });
+    }, { threshold: 0, rootMargin: '0px 0px -35% 0px' });
 
     const impactSection = document.querySelector('.success-story-impact-section');
     if (impactSection) blurObserver.observe(impactSection);
