@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             // Crossfade at the end of the frames
-            const movingBg = document.querySelector('.moving-journey-background');
+            const movingBg = document.querySelector('.moving-journey-background-track');
             const frameImg = document.querySelector('.train-compartment-frame');
             
             if (progress >= 0.45) {
@@ -187,6 +187,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const trainJourney = document.querySelector('.train-journey');
     const exploreBtns = document.querySelectorAll('.postcard-explore-btn');
     const videoOverlay = document.querySelector('.train-journey-video-overlay');
+    const videoBackdrop = document.querySelector('.train-journey-video-backdrop');
     const closeVideoBtn = document.querySelector('.close-video-btn');
     const videoIframe = document.querySelector('.video-iframe-container iframe');
 
@@ -194,24 +195,41 @@ document.addEventListener("DOMContentLoaded", function () {
         exploreBtns.forEach(btn => {
             btn.addEventListener('click', (e) => {
                 e.preventDefault();
+                
+                // Get the unique video source from the button clicked
+                const newSrc = btn.getAttribute('data-video-src');
+                if (newSrc && videoIframe) {
+                    videoIframe.src = newSrc;
+                }
+
+                if (videoBackdrop) videoBackdrop.classList.add('active');
                 videoOverlay.classList.add('active');
                 if (trainJourney) {
                     trainJourney.classList.add('video-open');
                 }
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
             });
         });
 
         closeVideoBtn.addEventListener('click', () => {
+            if (videoBackdrop) videoBackdrop.classList.remove('active');
             videoOverlay.classList.remove('active');
             if (trainJourney) {
                 trainJourney.classList.remove('video-open');
             }
-            // Pause video when closing by resetting the src
+            document.body.style.overflow = ''; // Restore background scrolling
+            // Stop video when closing by clearing the src
             if (videoIframe) {
-                const src = videoIframe.src;
-                videoIframe.src = src;
+                videoIframe.src = '';
             }
         });
+        
+        // Also close the video if the user clicks on the backdrop
+        if (videoBackdrop) {
+            videoBackdrop.addEventListener('click', () => {
+                closeVideoBtn.click();
+            });
+        }
     }
 
     // Navbar Scroll Logic

@@ -261,7 +261,12 @@
     <section class="train-journey-scroll-container" id="train-journey-section">
         <section class="train-journey">
             <div class="train-journey-container">
-                <div class="moving-journey-background"></div>
+                <div class="moving-journey-background-track">
+                    <div class="moving-journey-background-img"></div>
+                    <div class="moving-journey-background-img flip"></div>
+                    <div class="moving-journey-background-img"></div>
+                    <div class="moving-journey-background-img flip"></div>
+                </div>
                 <img src="assets/images/train-journey/train-compartment-frame.webp" alt="Train Compartment Frame" class="train-compartment-frame">
                 <canvas id="journey-frames-canvas" class="journey-frames-canvas"></canvas>
                 <div class="train-journey-text-overlay">
@@ -293,7 +298,7 @@
                                     <p class="postcard-line">meaningful impact</p>
                                     <p class="postcard-line">through education.</p>
                                     
-                                    <a href="#" class="postcard-explore-btn">
+                                    <a href="#" class="postcard-explore-btn" data-video-src="https://www.youtube.com/embed/nYKHAg-OUJE?si=kPhyyAhO63fKhc7s">
                                         Explore story
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right postcard-explore-icon" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
@@ -327,7 +332,7 @@
                                     <p class="postcard-line">meaningful impact</p>
                                     <p class="postcard-line">through education.</p>
                                     
-                                    <a href="#" class="postcard-explore-btn">
+                                    <a href="#" class="postcard-explore-btn" data-video-src="https://www.youtube.com/embed/YOUR_GOA_VIDEO_ID_HERE">
                                         Explore story
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right postcard-explore-icon" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
@@ -361,7 +366,7 @@
                                     <p class="postcard-line">meaningful impact</p>
                                     <p class="postcard-line">through education.</p>
                                     
-                                    <a href="#" class="postcard-explore-btn">
+                                    <a href="#" class="postcard-explore-btn" data-video-src="https://www.youtube.com/embed/YOUR_MUMBAI_VIDEO_ID_HERE">
                                         Explore story
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right postcard-explore-icon" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
@@ -370,14 +375,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                
-                <!-- Video Overlay Sequence (Hidden by default) -->
-                <div class="train-journey-video-overlay">
-                    <button class="close-video-btn">&times;</button>
-                    <div class="video-iframe-container">
-                        <iframe src="https://www.youtube.com/embed/nYKHAg-OUJE?si=kPhyyAhO63fKhc7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -862,6 +859,15 @@
         });
     </script>
     <script src="assets/js/script.js"></script>
+
+    <!-- Video Overlay Sequence (Moved to top level) -->
+    <div class="train-journey-video-backdrop"></div>
+    <div class="train-journey-video-overlay">
+        <button class="close-video-btn">&times;</button>
+        <div class="video-iframe-container">
+            <iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
 </body>
 
 </html>

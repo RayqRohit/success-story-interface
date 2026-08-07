@@ -1213,19 +1213,29 @@ html {
     transition: transform 0.4s ease-out, opacity 0.4s ease-out, filter 0.4s ease-out;
 }
 
-.moving-journey-background {
+.moving-journey-background-track {
     position: absolute;
     top: 50%;
     left: 0;
-    width: 100%;
-    height: 55%;
+    width: 400vw; /* 4 times the viewport width for 4 images */
+    height: 65%;
     transform: translateY(-50%);
+    display: flex;
+    animation: scrollTrainBackground 20s linear infinite;
+    z-index: 1;
+}
+
+.moving-journey-background-img {
+    flex: 0 0 100vw;
+    height: 100%;
     background-image: url('../images/train-journey/moving-journey-background.webp');
     background-size: cover;
-    background-repeat: repeat-x;
-    background-position: left center;
-    animation: scrollTrainBackground 18s linear infinite;
-    z-index: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.moving-journey-background-img.flip {
+    transform: scaleX(-1);
 }
 
 .train-compartment-frame {
@@ -1330,16 +1340,35 @@ html {
 
 @keyframes scrollTrainBackground {
     0% {
-        background-position: 0 center;
+        transform: translate(0, -50%);
     }
 
     100% {
-        background-position: -5000px center;
+        transform: translate(-200vw, -50%);
     }
 }
 
+.train-journey-video-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    z-index: 9998;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.train-journey-video-backdrop.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 .train-journey-video-overlay {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -1349,7 +1378,7 @@ html {
     /* 16:9 Aspect Ratio based on width */
     max-height: 506px;
     background: #000;
-    z-index: 10;
+    z-index: 9999;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.5s ease-in-out;

@@ -4,13 +4,13 @@
     }
 
     .success-story-navbar-section {
-        height: 125px !important;
+        height: 100px !important;
         position: relative;
         z-index: 10;
     }
 
     .success-story-navbar-img {
-        height: 125px !important;
+        height: 100px !important;
         z-index: 2 !important;
     }
 
@@ -87,7 +87,7 @@
 
     /* Impact Journey Section Mobile */
     .success-story-impact-section {
-        margin-top: -215px;
+        margin-top: -225px;
         padding-top: 240px !important;
         background-size: cover !important;
         background-position: top center !important;
@@ -299,6 +299,43 @@
         width: 25px;
         height: 25px;
     }
+
+    .train-journey-text {
+        font-size: 2rem !important;
+        max-width: 80vw !important;
+    }
+
+    .train-journey-postcard-wrapper {
+        width: 20rem !important;
+    }
+
+    .postcard-title {
+        font-size: 1.4rem !important;
+    }
+
+    .postcard-line {
+        font-size: 0.6rem !important;
+        margin-bottom: 4px !important;
+    }
+
+    .postcard-explore-btn {
+        font-size: 0.75rem !important;
+    }
+
+    .postcard-container{
+        margin-left: 1rem !important;
+    }
+
+    .train-journey-video-overlay {
+        width: 85vw !important;
+        height: 47.8vw !important;
+    }
+
+    .close-video-btn {
+        top: -35px !important;
+        right: 0 !important;
+        font-size: 2rem !important;
+    }
 }
 
 @media screen and (min-width: 376px) and (max-width: 479px) {
@@ -307,13 +344,13 @@
     }
 
     .success-story-navbar-section {
-        height: 125px !important;
+        height: 110px !important;
         position: relative;
         z-index: 10;
     }
 
     .success-story-navbar-img {
-        height: 125px !important;
+        height: 110px !important;
         z-index: 2 !important;
     }
 
@@ -604,7 +641,45 @@
 
     .success-story-footer-social-icons img {
         width: 25px;
+        width: 25px;
         height: 25px;
+    }
+
+    .train-journey-text {
+        font-size: 2rem !important;
+        max-width: 80vw !important;
+    }
+
+    .train-journey-postcard-wrapper {
+        width: 25rem !important;
+    }
+
+    .postcard-title {
+        font-size: 1.4rem !important;
+    }
+
+    .postcard-line {
+        font-size: 0.6rem !important;
+        margin-bottom: 4px !important;
+    }
+
+    .postcard-explore-btn {
+        font-size: 0.75rem !important;
+    }
+
+    .postcard-container{
+        margin-left: 1rem;
+    }
+
+    .train-journey-video-overlay {
+        width: 85vw !important;
+        height: 47.8vw !important;
+    }
+
+    .close-video-btn {
+        top: -35px !important;
+        right: 0 !important;
+        font-size: 2rem !important;
     }
 }
 
@@ -614,13 +689,13 @@
     }
 
     .success-story-navbar-section {
-        height: 125px !important;
+        height: 110px !important;
         position: relative;
         z-index: 10;
     }
 
     .success-story-navbar-img {
-        height: 125px !important;
+        height: 110px !important;
         z-index: 2 !important;
     }
 
@@ -916,6 +991,43 @@
     .success-story-footer-social-icons img {
         width: 25px;
         height: 25px;
+    }
+
+    .train-journey-text {
+        font-size: 2rem !important;
+        max-width: 80vw !important;
+    }
+
+    .train-journey-postcard-wrapper {
+        width: 28rem !important;
+    }
+
+    .postcard-title {
+        font-size: 1.4rem !important;
+    }
+
+    .postcard-line {
+        font-size: 0.6rem !important;
+        margin-bottom: 4px !important;
+    }
+
+    .postcard-explore-btn {
+        font-size: 0.75rem !important;
+    }
+
+    .train-journey-video-overlay {
+        width: 85vw !important;
+        height: 47.8vw !important;
+    }
+
+    .close-video-btn {
+        top: -35px !important;
+        right: 0 !important;
+        font-size: 2rem !important;
+    }
+
+    .postcard-container{
+        margin-left: 1rem;
     }
 }
 
@@ -1239,6 +1351,41 @@
         width: 25px;
         height: 25px;
     }
+
+    .train-journey-text {
+        font-size: 2rem !important;
+        max-width: 80vw !important;
+    }
+
+    .train-journey-postcard-wrapper {
+        width: 30rem !important;
+        margin-right: 0rem;
+    }
+
+    .postcard-title {
+        font-size: 1.4rem !important;
+    }
+
+    .postcard-line {
+        font-size: 0.6rem !important;
+        margin-bottom: 4px !important;
+    }
+
+    .postcard-explore-btn {
+        font-size: 0.75rem !important;
+    }
+
+    .train-journey-video-overlay {
+        width: 85vw !important;
+        height: 47.8vw !important;
+    }
+
+    .close-video-btn {
+        top: -35px !important;
+        right: 0 !important;
+        font-size: 2rem !important;
+    }
+   
 }
 
 
@@ -1602,6 +1749,43 @@
     .success-story-footer-subscribe-wrapper {
         gap: 15px;
     }
+
+    .train-journey-text {
+        font-size: 3rem !important;
+        max-width: 80vw !important;
+    }
+
+    .train-journey-postcard-wrapper {
+        width: 32rem !important;
+    }
+
+    .postcard-title {
+        font-size: 1.4rem !important;
+    }
+
+    .postcard-line {
+        font-size: 0.6rem !important;
+        margin-bottom: 4px !important;
+    }
+
+    .postcard-explore-btn {
+        font-size: 0.75rem !important;
+    }
+
+    .train-journey-video-overlay {
+        width: 85vw !important;
+        height: 47.8vw !important;
+    }
+
+    .close-video-btn {
+        top: -35px !important;
+        right: 0 !important;
+        font-size: 2rem !important;
+    }
+
+    .postcard-container{
+        margin-left: 1rem;
+    }
 }
 
 
@@ -1761,6 +1945,43 @@
     .success-story-submission-post-box-img {
         max-width: 275px;
     }
+
+    .train-journey-text {
+        font-size: 4.5rem !important;
+        max-width: 80vw !important;
+    }
+
+    .train-journey-postcard-wrapper {
+        width: 32rem !important;
+    }
+
+    .postcard-title {
+        font-size: 1.8rem !important;
+    }
+
+    .postcard-line {
+        font-size: 0.95rem !important;
+        margin-bottom: 6px !important;
+    }
+
+    .postcard-explore-btn {
+        font-size: 1.1rem !important;
+    }
+
+    .train-journey-video-overlay {
+        width: 65vw !important;
+        height: 36.6vw !important;
+    }
+
+    .close-video-btn {
+        top: -35px !important;
+        right: 0 !important;
+        font-size: 2rem !important;
+    }
+
+    .postcard-container {
+        margin-left: 1rem;
+    }
 }
 
 
@@ -1866,6 +2087,43 @@
     .success-story-submission-post-box-img {
         max-width: 280px;
     }
+
+    .train-journey-text {
+        font-size: 4rem !important;
+        max-width: 80vw !important;
+    }
+
+    .train-journey-postcard-wrapper {
+        width: 31rem;
+    }
+
+    .postcard-title {
+        font-size: 1.8rem !important;
+    }
+
+    .postcard-line {
+        font-size: 0.95rem !important;
+        margin-bottom: 6px !important;
+    }
+
+    .postcard-explore-btn {
+        font-size: 1.1rem !important;
+    }
+
+    .train-journey-video-overlay {
+        width: 60vw !important;
+        height: 33.7vw !important;
+    }
+
+    .close-video-btn {
+        top: -35px !important;
+        right: 0 !important;
+        font-size: 2rem !important;
+    }
+
+    .postcard-container {
+        margin-left: 1rem;
+    }
 }
 
 @media screen and (min-width : 1400px) and (max-width : 1699px){
@@ -1876,7 +2134,43 @@
     .success-story-photo-bl{
         left: 4%;
     }
-    
+
+    .train-journey-text {
+        font-size: 4rem !important;
+        max-width: 50vw !important;
+    }
+
+    .train-journey-postcard-wrapper {
+        width: 32rem !important;
+    }
+
+    .postcard-title {
+        font-size: 1.8rem !important;
+    }
+
+    .postcard-line {
+        font-size: 0.95rem !important;
+        margin-bottom: 6px !important;
+    }
+
+    .postcard-explore-btn {
+        font-size: 1.1rem !important;
+    }
+
+    .train-journey-video-overlay {
+        width: 60vw !important;
+        height: 33.7vw !important;
+    }
+
+    .close-video-btn {
+        top: -35px !important;
+        right: 0 !important;
+        font-size: 2rem !important;
+    }
+
+    .postcard-container {
+        margin-left: 1rem;
+    }
 }
 
 @media screen and (min-width: 1700px) {
@@ -1917,6 +2211,43 @@
     .success-story-photo-bl {
         bottom: 16%;
         left: 4%;
+    }
+
+    .train-journey-text {
+        font-size: 5rem !important;
+        max-width: 80vw !important;
+    }
+
+    .train-journey-postcard-wrapper {
+        width: 37rem !important;
+    }
+
+    .postcard-title {
+        font-size: 1.8rem !important;
+    }
+
+    .postcard-line {
+        font-size: 0.95rem !important;
+        margin-bottom: 6px !important;
+    }
+
+    .postcard-explore-btn {
+        font-size: 1.1rem !important;
+    }
+
+    .train-journey-video-overlay {
+        width: 60vw !important;
+        height: 33.7vw !important;
+    }
+
+    .close-video-btn {
+        top: -35px !important;
+        right: 0 !important;
+        font-size: 2rem !important;
+    }
+
+    .postcard-container {
+        margin-left: 1rem;
     }
 }
 
@@ -1961,6 +2292,47 @@
     .success-story-postcard-bc {
         left: 39%;
     }
+
+    .moving-journey-background-track {
+        height: 100% !important;
+    }
+
+    .train-journey-text {
+        font-size: 5rem !important;
+        max-width: 80vw !important;
+    }
+
+    .train-journey-postcard-wrapper {
+        width: 42rem !important;
+    }
+
+    .postcard-title {
+        font-size: 1.8rem !important;
+    }
+
+    .postcard-line {
+        font-size: 0.95rem !important;
+        margin-bottom: 6px !important;
+    }
+
+    .postcard-explore-btn {
+        font-size: 1.1rem !important;
+    }
+
+    .train-journey-video-overlay {
+        width: 60vw !important;
+        height: 33.7vw !important;
+    }
+
+    .close-video-btn {
+        top: -35px !important;
+        right: 0 !important;
+        font-size: 2rem !important;
+    }
+
+    .postcard-container {
+        margin-left: 1rem;
+    }
 }
 
 
@@ -2003,5 +2375,46 @@
 
     .success-story-postcard-bc {
         left: 39%;
+    }
+
+    .moving-journey-background-track {
+        height: 100% !important;
+    }
+
+    .train-journey-text {
+        font-size: 7rem !important;
+        max-width: 80vw !important;
+    }
+
+    .train-journey-postcard-wrapper {
+        width: 46rem !important;
+    }
+
+    .postcard-title {
+        font-size: 2.2rem !important;
+    }
+
+    .postcard-line {
+        font-size: 1.2rem !important;
+        margin-bottom: 8px !important;
+    }
+
+    .postcard-explore-btn {
+        font-size: 1.4rem !important;
+    }
+
+    .train-journey-video-overlay {
+        width: 60vw !important;
+        height: 33.7vw !important;
+    }
+
+    .close-video-btn {
+        top: -35px !important;
+        right: 0 !important;
+        font-size: 2rem !important;
+    }
+
+    .postcard-container {
+        margin-left: 1rem;
     }
 }
