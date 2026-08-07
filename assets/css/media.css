@@ -85,6 +85,13 @@
         right: -47%;
     }
 
+    .success-story-postcard-mobile-extra {
+        bottom: -8%;
+        left: -46%;
+        scale: 0.45;
+        --final-rotate: 19deg;
+    }
+
     /* Impact Journey Section Mobile */
     .success-story-impact-section {
         margin-top: -225px;
@@ -322,7 +329,7 @@
         font-size: 0.75rem !important;
     }
 
-    .postcard-container{
+    .postcard-container {
         margin-left: 1rem !important;
     }
 
@@ -403,7 +410,7 @@
 
     .success-story-photo-bl {
         bottom: auto;
-        top: 63%;
+        top: 64%;
         left: 2%;
         --final-rotate: -16deg;
     }
@@ -427,9 +434,16 @@
         scale: 0.5;
     }
 
+    .success-story-postcard-mobile-extra {
+       bottom: -8%;
+        left: -42%;
+        scale: 0.45;
+        --final-rotate: 19deg;
+    }
+
     /* Impact Journey Section Mobile */
     .success-story-impact-section {
-        margin-top: -215px;
+        margin-top: -230px;
         padding-top: 240px !important;
         background-size: cover !important;
         background-position: top center !important;
@@ -667,7 +681,7 @@
         font-size: 0.75rem !important;
     }
 
-    .postcard-container{
+    .postcard-container {
         margin-left: 1rem;
     }
 
@@ -772,9 +786,16 @@
         scale: 0.5;
     }
 
+    .success-story-postcard-mobile-extra {
+        bottom: -9%;
+        left: -29%;
+        scale: 0.5;
+        --final-rotate: 19deg;
+    }
+
     /* Impact Journey Section Mobile */
     .success-story-impact-section {
-        margin-top: -215px;
+        margin-top: -230px;
         padding-top: 240px !important;
         background-size: cover !important;
         background-position: top center !important;
@@ -1026,7 +1047,7 @@
         font-size: 2rem !important;
     }
 
-    .postcard-container{
+    .postcard-container {
         margin-left: 1rem;
     }
 }
@@ -1109,6 +1130,14 @@
         scale: 0.6;
     }
 
+    .success-story-postcard-mobile-extra {
+               bottom: -4%;
+        left: -22%;
+        scale: 0.6;
+        --final-rotate: 22deg;
+
+    }
+
     .success-story-photo-br {
         bottom: 3%;
         right: -18%;
@@ -1124,7 +1153,7 @@
 
     /* Impact Journey Section Mobile */
     .success-story-impact-section {
-        margin-top: -215px;
+        margin-top: -235px;
         padding-top: 240px !important;
         background-size: cover !important;
         background-position: top center !important;
@@ -1385,7 +1414,7 @@
         right: 0 !important;
         font-size: 2rem !important;
     }
-   
+
 }
 
 
@@ -1783,7 +1812,7 @@
         font-size: 2rem !important;
     }
 
-    .postcard-container{
+    .postcard-container {
         margin-left: 1rem;
     }
 }
@@ -2126,12 +2155,12 @@
     }
 }
 
-@media screen and (min-width : 1400px) and (max-width : 1699px){
+@media screen and (min-width : 1400px) and (max-width : 1699px) {
     .success-story-hero-section {
         min-height: 1070px;
     }
 
-    .success-story-photo-bl{
+    .success-story-photo-bl {
         left: 4%;
     }
 
@@ -2181,7 +2210,7 @@
         margin-top: -40px;
     }
 
-    
+
 
     /* Postcards Ultra-Wide Scale */
     .success-story-scatter-item {

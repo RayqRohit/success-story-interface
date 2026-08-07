@@ -312,6 +312,11 @@ img {
     width: 350px;
 }
 
+/* 6. Postcard Mobile Extra */
+.success-story-postcard-mobile-extra {
+    width: 420px;
+    z-index: 2;
+}
 
 /* Postage Stamp Frame */
 .success-story-stamp-frame {
@@ -1123,9 +1128,20 @@ img {
     align-items: center;
 }
 
-.postcard-photo {
+.postcard-stamp-bg {
     width: 100%;
     height: auto;
+    display: block;
+}
+
+.postcard-photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 86%; /* Slightly smaller to fit inside the stamp border */
+    height: 86%;
+    object-fit: cover;
 }
 
 .postcard-text-area {
