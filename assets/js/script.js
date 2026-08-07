@@ -117,10 +117,11 @@ document.addEventListener("DOMContentLoaded", function () {
             const frameImg = document.querySelector('.train-compartment-frame');
             
             if (progress >= 0.45) {
-                let crossfade = mapProgress(progress, 0.45, 0.5, 0, 1);
-                if (movingBg) movingBg.style.opacity = crossfade;
-                if (frameImg) frameImg.style.opacity = crossfade;
-                if (canvas) canvas.style.opacity = 1 - crossfade;
+                let canvasFade = mapProgress(progress, 0.45, 0.5, 1, 0);
+                if (movingBg) movingBg.style.opacity = 1;
+                if (frameImg) frameImg.style.opacity = 1;
+                // Fade out the canvas on top to reveal the opaque background properly layered
+                if (canvas) canvas.style.opacity = canvasFade;
             } else {
                 if (movingBg) movingBg.style.opacity = 0;
                 if (frameImg) frameImg.style.opacity = 0;

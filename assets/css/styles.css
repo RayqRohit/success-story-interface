@@ -1164,7 +1164,7 @@ img {
     width: 100%;
     height: 100vh;
     object-fit: cover;
-    z-index: 1;
+    z-index: 3;
     animation: trainSway 1.5s infinite ease-in-out;
     transform-origin: center center;
     will-change: transform;
@@ -1228,8 +1228,7 @@ html {
     z-index: 1;
 }
 
-.train-compartment-frame,
-.train-journey-text-overlay {
+.train-compartment-frame {
     position: absolute;
     top: 0;
     left: 0;
@@ -1237,6 +1236,19 @@ html {
     height: 100vh;
     object-fit: cover;
     z-index: 2;
+    pointer-events: none;
+    animation: trainSway 1.5s infinite ease-in-out;
+    transform-origin: center center;
+    will-change: transform;
+}
+
+.train-journey-text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 4;
     pointer-events: none;
     display: flex;
     justify-content: center;
