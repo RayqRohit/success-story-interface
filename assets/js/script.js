@@ -128,6 +128,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (canvas) canvas.style.opacity = 1;
             }
 
+            // Determine slide distance based on screen size to prevent mobile overlap
+            let isMobile = window.innerWidth <= 479;
+            let slideInX = isMobile ? 250 : 120;
+            let slideOutX = isMobile ? -250 : -120;
+
             // 1. Text Sequence (0.5 to 0.65)
             let textOpacity = mapProgress(progress, 0.5, 0.55, 0, 1);
             let textBlur = mapProgress(progress, 0.5, 0.55, 10, 0);
@@ -136,7 +141,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (progress > 0.6) {
                 textOpacity = mapProgress(progress, 0.6, 0.65, 1, 0);
                 textBlur = mapProgress(progress, 0.6, 0.65, 0, 20);
-                textX = mapProgress(progress, 0.6, 0.65, 0, -120);
+                textX = mapProgress(progress, 0.6, 0.65, 0, slideOutX);
             }
 
             trainText.style.opacity = textOpacity;
@@ -147,11 +152,11 @@ document.addEventListener("DOMContentLoaded", function () {
             // 2. Gujarat Sequence (0.6 to 0.75)
             let gujOpacity = mapProgress(progress, 0.6, 0.65, 0, 1);
             let gujScale = mapProgress(progress, 0.6, 0.65, 0.8, 1);
-            let gujX = mapProgress(progress, 0.6, 0.65, 120, 0);
+            let gujX = mapProgress(progress, 0.6, 0.65, slideInX, 0);
 
             if (progress > 0.7) {
                 gujOpacity = mapProgress(progress, 0.7, 0.75, 1, 0);
-                gujX = mapProgress(progress, 0.7, 0.75, 0, -120);
+                gujX = mapProgress(progress, 0.7, 0.75, 0, slideOutX);
             }
 
             postcardGujarat.style.opacity = gujOpacity;
@@ -161,11 +166,11 @@ document.addEventListener("DOMContentLoaded", function () {
             // 3. Goa Sequence (0.7 to 0.85)
             let goaOpacity = mapProgress(progress, 0.7, 0.75, 0, 1);
             let goaScale = mapProgress(progress, 0.7, 0.75, 0.8, 1);
-            let goaX = mapProgress(progress, 0.7, 0.75, 120, 0);
+            let goaX = mapProgress(progress, 0.7, 0.75, slideInX, 0);
 
             if (progress > 0.8) {
                 goaOpacity = mapProgress(progress, 0.8, 0.85, 1, 0);
-                goaX = mapProgress(progress, 0.8, 0.85, 0, -120);
+                goaX = mapProgress(progress, 0.8, 0.85, 0, slideOutX);
             }
 
             postcardGoa.style.opacity = goaOpacity;
@@ -175,11 +180,30 @@ document.addEventListener("DOMContentLoaded", function () {
             // 4. Mumbai Sequence (0.8 to 1.0)
             let mumOpacity = mapProgress(progress, 0.8, 0.85, 0, 1);
             let mumScale = mapProgress(progress, 0.8, 0.85, 0.8, 1);
-            let mumX = mapProgress(progress, 0.8, 0.85, 120, 0);
+            let mumX = mapProgress(progress, 0.8, 0.85, slideInX, 0);
 
             postcardMumbai.style.opacity = mumOpacity;
             postcardMumbai.style.transform = `translateX(${mumX}vw) scale(${mumScale})`;
             postcardMumbai.style.pointerEvents = mumOpacity > 0.5 && mumX === 0 ? 'auto' : 'none';
+
+            // Snap Animation Logic (Dashed Border)
+            if (progress >= 0.65 && progress <= 0.7) {
+                postcardGujarat.classList.add('active-snap');
+            } else {
+                postcardGujarat.classList.remove('active-snap');
+            }
+
+            if (progress >= 0.75 && progress <= 0.8) {
+                postcardGoa.classList.add('active-snap');
+            } else {
+                postcardGoa.classList.remove('active-snap');
+            }
+
+            if (progress >= 0.85 && progress <= 1.0) {
+                postcardMumbai.classList.add('active-snap');
+            } else {
+                postcardMumbai.classList.remove('active-snap');
+            }
         });
     }
 

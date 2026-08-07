@@ -89,7 +89,7 @@ img {
     .success-story-navbar-section.scrolled {
         height: 110px !important;
     }
-    
+
     .success-story-navbar-section.scrolled .success-story-navbar-img {
         height: 110px !important;
     }
@@ -1038,6 +1038,39 @@ img {
     overflow: hidden;
 }
 
+.train-journey-postcard-wrapper::after {
+    content: "";
+    position: absolute;
+    inset: -5px -4px -5px 11px; /* Adjust left inset to fix the transparent PNG gap */
+    background-image:
+        linear-gradient(90deg, #5a1910 50%, transparent 50%),
+        linear-gradient(90deg, #5a1910 50%, transparent 50%),
+        linear-gradient(0deg, #5a1910 50%, transparent 50%),
+        linear-gradient(0deg, #5a1910 50%, transparent 50%);
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    background-size: 20px 3px, 20px 3px, 3px 20px, 3px 20px; /* Thinner (3px) and shorter (20px) dashes */
+    background-position: 0 0, 100% 100%, 0 100%, 100% 0;
+    animation: marching-ants 1s infinite linear;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.train-journey-postcard-wrapper.active-snap::after {
+    opacity: 1;
+}
+
+@keyframes marching-ants {
+    0% {
+        background-position: 0 0, 100% 100%, 0 100%, 100% 0;
+    }
+
+    100% {
+        background-position: 20px 0, calc(100% - 20px) 100%, 0 calc(100% - 20px), 100% 20px;
+    }
+}
+
 .postcard-content {
     position: absolute;
     top: 0;
@@ -1157,6 +1190,26 @@ img {
     z-index: 2;
 }
 
+html {
+    scroll-snap-type: y mandatory;
+}
+
+.train-journey-snap-point {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: start;
+    pointer-events: none;
+}
+
+.train-journey-snap-point:nth-of-type(1) { top: 0; }
+.train-journey-snap-point:nth-of-type(2) { top: 300vh; }
+.train-journey-snap-point:nth-of-type(3) { top: 345vh; }
+.train-journey-snap-point:nth-of-type(4) { top: 405vh; }
+.train-journey-snap-point:nth-of-type(5) { top: 465vh; }
+.train-journey-snap-point:nth-of-type(6) { top: 555vh; }
+.train-journey-snap-point:nth-of-type(7) { top: 600vh; }
+
 .journey-frames-canvas {
     position: absolute;
     top: 0;
@@ -1217,7 +1270,8 @@ html {
     position: absolute;
     top: 50%;
     left: 0;
-    width: 400vw; /* 4 times the viewport width for 4 images */
+    width: 400vw;
+    /* 4 times the viewport width for 4 images */
     height: 65%;
     transform: translateY(-50%);
     display: flex;
@@ -1425,9 +1479,9 @@ html {
     opacity: 0;
     filter: blur(15px);
     transform: translateY(30px);
-    transition: opacity 1s cubic-bezier(0.2, 0.8, 0.2, 1), 
-                filter 1s cubic-bezier(0.2, 0.8, 0.2, 1), 
-                transform 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+    transition: opacity 1s cubic-bezier(0.2, 0.8, 0.2, 1),
+        filter 1s cubic-bezier(0.2, 0.8, 0.2, 1),
+        transform 1s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .success-story-impact-section.in-view .blur-reveal {
@@ -1436,7 +1490,18 @@ html {
     transform: translateY(0);
 }
 
-.success-story-impact-section.in-view .blur-delay-1 { transition-delay: 0.3s; }
-.success-story-impact-section.in-view .blur-delay-2 { transition-delay: 0.5s; }
-.success-story-impact-section.in-view .blur-delay-3 { transition-delay: 0.7s; }
-.success-story-impact-section.in-view .blur-delay-4 { transition-delay: 0.9s; }
+.success-story-impact-section.in-view .blur-delay-1 {
+    transition-delay: 0.3s;
+}
+
+.success-story-impact-section.in-view .blur-delay-2 {
+    transition-delay: 0.5s;
+}
+
+.success-story-impact-section.in-view .blur-delay-3 {
+    transition-delay: 0.7s;
+}
+
+.success-story-impact-section.in-view .blur-delay-4 {
+    transition-delay: 0.9s;
+}
