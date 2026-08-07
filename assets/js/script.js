@@ -59,17 +59,29 @@ document.addEventListener("DOMContentLoaded", function () {
         canvas.width = 1920;
         canvas.height = 1080;
 
-        // Load all frames concurrently to drastically speed up preloading
-        for (let i = 0; i < frameCount; i++) {
-            const img = new Image();
-            img.src = currentFrame(i);
-            images.push(img);
+        // Load the first frame immediately so it displays right away
+        const firstFrame = new Image();
+        firstFrame.src = currentFrame(0);
+        images.push(firstFrame);
+        
+        firstFrame.onload = () => {
+            ctx.drawImage(firstFrame, 0, 0, canvas.width, canvas.height);
+        };
+
+        // Fill the rest of the array with nulls temporarily
+        for (let i = 1; i < frameCount; i++) {
+            images.push(null);
         }
 
-        // Display the first frame as soon as it's ready
-        images[0].onload = () => {
-            ctx.drawImage(images[0], 0, 0, canvas.width, canvas.height);
-        };
+        // Load all other frames quietly in the background AFTER the page has fully loaded
+        // This stops the browser tab's loading spinner from spinning endlessly!
+        window.addEventListener('load', () => {
+            for (let i = 1; i < frameCount; i++) {
+                const img = new Image();
+                img.src = currentFrame(i);
+                images[i] = img;
+            }
+        });
     }
 
     if (trainScrollContainer && trainText && postcardGujarat) {
