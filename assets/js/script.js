@@ -133,77 +133,57 @@ document.addEventListener("DOMContentLoaded", function () {
             let slideInX = isMobile ? 250 : 120;
             let slideOutX = isMobile ? -250 : -120;
 
-            // 1. Text Sequence (0.5 to 0.65)
-            let textOpacity = mapProgress(progress, 0.5, 0.55, 0, 1);
-            let textBlur = mapProgress(progress, 0.5, 0.55, 10, 0);
-            let textX = 0;
+            // Decouple from continuous scrolling: Use discrete states
+            // State 0: Intro text
+            // State 1: Gujarat
+            // State 2: Goa
+            // State 3: Mumbai
 
-            if (progress > 0.6) {
-                textOpacity = mapProgress(progress, 0.6, 0.65, 1, 0);
-                textBlur = mapProgress(progress, 0.6, 0.65, 0, 20);
-                textX = mapProgress(progress, 0.6, 0.65, 0, slideOutX);
-            }
+            let state = -1;
+            if (progress >= 0.5 && progress < 0.6) state = 0;
+            else if (progress >= 0.6 && progress < 0.72) state = 1;
+            else if (progress >= 0.72 && progress < 0.83) state = 2;
+            else if (progress >= 0.83 && progress <= 1.0) state = 3;
 
-            trainText.style.opacity = textOpacity;
-            trainText.style.filter = `blur(${textBlur}px)`;
-            trainText.style.transform = `translateX(${textX}vw)`;
-            trainText.style.pointerEvents = textOpacity > 0.5 ? 'auto' : 'none';
+            // 1. Text Sequence
+            trainText.style.opacity = state === 0 ? 1 : 0;
+            trainText.style.filter = state === 0 ? 'blur(0px)' : 'blur(10px)';
+            if (state === 0) trainText.style.transform = `translateX(0vw)`;
+            else if (state > 0) trainText.style.transform = `translateX(-120vw)`;
+            else trainText.style.transform = `translateX(120vw)`;
+            trainText.style.pointerEvents = state === 0 ? 'auto' : 'none';
 
-            // 2. Gujarat Sequence (0.6 to 0.75)
-            let gujOpacity = mapProgress(progress, 0.6, 0.65, 0, 1);
-            let gujScale = mapProgress(progress, 0.6, 0.65, 0.8, 1);
-            let gujX = mapProgress(progress, 0.6, 0.65, slideInX, 0);
+            // 2. Gujarat Sequence
+            postcardGujarat.style.opacity = state === 1 ? 1 : 0;
+            if (state === 1) postcardGujarat.style.transform = `translateX(0vw) scale(1)`;
+            else if (state > 1) postcardGujarat.style.transform = `translateX(-120vw) scale(0.8)`;
+            else postcardGujarat.style.transform = `translateX(120vw) scale(0.8)`;
+            postcardGujarat.style.pointerEvents = state === 1 ? 'auto' : 'none';
+            if (state === 1) postcardGujarat.classList.add('active-snap');
+            else postcardGujarat.classList.remove('active-snap');
 
-            if (progress > 0.7) {
-                gujOpacity = mapProgress(progress, 0.7, 0.75, 1, 0);
-                gujX = mapProgress(progress, 0.7, 0.75, 0, slideOutX);
-            }
+            // 3. Goa Sequence
+            postcardGoa.style.opacity = state === 2 ? 1 : 0;
+            if (state === 2) postcardGoa.style.transform = `translateX(0vw) scale(1)`;
+            else if (state > 2) postcardGoa.style.transform = `translateX(-120vw) scale(0.8)`;
+            else postcardGoa.style.transform = `translateX(120vw) scale(0.8)`;
+            postcardGoa.style.pointerEvents = state === 2 ? 'auto' : 'none';
 
-            postcardGujarat.style.opacity = gujOpacity;
-            postcardGujarat.style.transform = `translateX(${gujX}vw) scale(${gujScale})`;
-            postcardGujarat.style.pointerEvents = gujOpacity > 0.5 && gujX === 0 ? 'auto' : 'none';
+            // 4. Mumbai Sequence
+            postcardMumbai.style.opacity = state === 3 ? 1 : 0;
+            if (state === 3) postcardMumbai.style.transform = `translateX(0vw) scale(1)`;
+            else if (state > 3) postcardMumbai.style.transform = `translateX(-120vw) scale(0.8)`;
+            else postcardMumbai.style.transform = `translateX(120vw) scale(0.8)`;
+            postcardMumbai.style.pointerEvents = state === 3 ? 'auto' : 'none';
 
-            // 3. Goa Sequence (0.7 to 0.85)
-            let goaOpacity = mapProgress(progress, 0.7, 0.75, 0, 1);
-            let goaScale = mapProgress(progress, 0.7, 0.75, 0.8, 1);
-            let goaX = mapProgress(progress, 0.7, 0.75, slideInX, 0);
 
-            if (progress > 0.8) {
-                goaOpacity = mapProgress(progress, 0.8, 0.85, 1, 0);
-                goaX = mapProgress(progress, 0.8, 0.85, 0, slideOutX);
-            }
 
-            postcardGoa.style.opacity = goaOpacity;
-            postcardGoa.style.transform = `translateX(${goaX}vw) scale(${goaScale})`;
-            postcardGoa.style.pointerEvents = goaOpacity > 0.5 && goaX === 0 ? 'auto' : 'none';
+            // Add dashed border to Goa and Mumbai when active
+            if (state === 2) postcardGoa.classList.add('active-snap');
+            else postcardGoa.classList.remove('active-snap');
 
-            // 4. Mumbai Sequence (0.8 to 1.0)
-            let mumOpacity = mapProgress(progress, 0.8, 0.85, 0, 1);
-            let mumScale = mapProgress(progress, 0.8, 0.85, 0.8, 1);
-            let mumX = mapProgress(progress, 0.8, 0.85, slideInX, 0);
-
-            postcardMumbai.style.opacity = mumOpacity;
-            postcardMumbai.style.transform = `translateX(${mumX}vw) scale(${mumScale})`;
-            postcardMumbai.style.pointerEvents = mumOpacity > 0.5 && mumX === 0 ? 'auto' : 'none';
-
-            // Snap Animation Logic (Dashed Border)
-            if (progress >= 0.65 && progress <= 0.7) {
-                postcardGujarat.classList.add('active-snap');
-            } else {
-                postcardGujarat.classList.remove('active-snap');
-            }
-
-            if (progress >= 0.75 && progress <= 0.8) {
-                postcardGoa.classList.add('active-snap');
-            } else {
-                postcardGoa.classList.remove('active-snap');
-            }
-
-            if (progress >= 0.85 && progress <= 1.0) {
-                postcardMumbai.classList.add('active-snap');
-            } else {
-                postcardMumbai.classList.remove('active-snap');
-            }
+            if (state === 3) postcardMumbai.classList.add('active-snap');
+            else postcardMumbai.classList.remove('active-snap');
         });
     }
 
