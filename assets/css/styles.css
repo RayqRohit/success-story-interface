@@ -14,7 +14,7 @@
 
 @font-face {
     font-family: 'PPEditorialNew';
-    src: url('../fonts/PPEditorialNew-Regular-BF644b214ff145f.otf') format('opentype');
+    src: url('../fonts/PPEditorialNew-Regular-BF644b214ff145f.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -340,7 +340,7 @@ img {
 
 /* Impact Journey Section */
 .success-story-impact-section {
-    background-image: url('../images/impact-journey/postcards-of-impact-background.png');
+    background-image: url('../images/impact-journey/postcards-of-impact-background.webp');
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
